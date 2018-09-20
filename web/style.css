@@ -22,8 +22,7 @@
 
 .mask-container {
   position: relative;
-  display: block;
-  width: 100%; }
+  display: block; }
   .mask-container::before, .mask-container::after {
     content: '';
     position: absolute;
@@ -37,8 +36,8 @@
     bottom: -295%; }
 
 svg {
-  width: 125vw;
-  height: auto; }
+  width: auto;
+  height: 60vw; }
 
 @keyframes move {
   25% {
