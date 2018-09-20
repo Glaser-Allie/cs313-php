@@ -37,8 +37,8 @@
     bottom: -295%; }
 
 svg {
-  width: auto;
-  height: 60vw; }
+  width: 125vw;
+  height: auto; }
 
 @keyframes move {
   25% {
