@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-require("products.php");
 require("layout.php");
 
 // Initialize cart
