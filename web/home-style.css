@@ -249,7 +249,11 @@ a:hover::after {
 
 @media only screen and (max-height: 425px) {
     .landing-message{
-        font-size: 70%;
+        font-size: 80%;
+    }
+    
+    .landing-message h1 {
+        margin-bottom: .5em;
     }
     
     .container {
