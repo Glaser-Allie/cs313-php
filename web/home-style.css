@@ -7,10 +7,9 @@
 
 body {
     background-image: url(images/galveston.jpg);
-    width: auto;
+    width: 100vh;
     background-position: center;
-    max-height: 100vh;
-    overflow: hidden;
+        overflow: hidden;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     display: flex;
