@@ -7,6 +7,9 @@
 
 body {
     background-image: url(images/galveston.jpg);
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -93,7 +96,7 @@ header a {
     flex-flow: column nowrap;
     justify-content: center;
     position: relative;
-    background: cyan;
+    background: transparent;
     height: 25vh;
 }
 
