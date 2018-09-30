@@ -237,5 +237,6 @@ a:hover::after {
     }
     .innerbox a {
         font-size 2em;
+        padding: 1em 0;
     }
 }
