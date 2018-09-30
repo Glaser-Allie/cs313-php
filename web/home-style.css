@@ -8,7 +8,8 @@
 body {
     background-image: url(images/galveston.jpg);
     width: auto;
-    height: 100vh;
+    background-position: center;
+    max-height: 100vh;
     overflow: hidden;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -98,19 +99,6 @@ header a {
     position: relative;
     background: transparent;
     height: 25vh;
-}
-
-.container::after {
-    position: absolute;
-    bottom: -50px;
-    left: 0px;
-    width: 100%;
-    content: " ";
-    background: radial-gradient(circle at 50% 0%, cyan 29%, darkturquoise 6%, whitesmoke 35%);
-    background-color: whitesmoke;
-    background-size: 5em 10em;
-    height: 5em;
-    background-repeat: repeat-x;
 }
 
 .content {
