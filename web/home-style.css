@@ -15,7 +15,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
 }
 
 h1
