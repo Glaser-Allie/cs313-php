@@ -246,3 +246,14 @@ a:hover::after {
         font-size: 140%;
     }
 }
+
+@media only screen and (max-height: 425px) {
+    .landing-message{
+        font-size: 70%;
+    }
+    
+    .container {
+        flex-flow: row;
+        padding: 1em;        
+    }
+}
