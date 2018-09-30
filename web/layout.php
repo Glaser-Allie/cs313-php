@@ -11,8 +11,6 @@ $header = <<<HTML
 	<div class="container" ><a href='./index.php'><h1>CS 313</h1></a></div>
 		
         <header>
-            <p><a href='./index.php'>Home</a></p>
-            <br>
             <a href='./index.php?assignments=1' class="assignments">Assignments</a>
         </header>
         
@@ -20,7 +18,8 @@ $header = <<<HTML
 HTML;
 
 $footer = <<<HTML
-		
+<!doctype HTML public>
+		<div>This is the Footer</div>
         
         </div><!-- End content-->
 	</div><!-- End container-->
