@@ -242,8 +242,8 @@ a:hover::after {
         font-size: 1em;
         margin-bottom: 1em;
     }
-    .content h2{
-        margin-top: 75vh;
+    .assignments{
+        margin-top: 25vh;
         color: white;
     }
 }
