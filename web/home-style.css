@@ -229,7 +229,6 @@ a:hover::after {
     }
     .container{
         height: 50vh;
-        top: 30vh;
         width: 66vw;
         padding: 2em;
         position: absolute;
