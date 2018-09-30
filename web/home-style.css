@@ -35,61 +35,20 @@ h2 {
     width: 100vw;
 }
 
-h3 {
-  font-size: 2.75em;  
-}
-
-h4, h5 {
-    font-size: 1.25em;
-    line-height: .75em;
-}
-h5 {
-  color:darkmagenta;  
-}
-
-h4 a:link,
-a:visited {
-    color: deeppink;
-}
-
-h4 a:hover {
-    color: purple;
-}
-
 a {
     text-decoration: none;
     color: deeppink;
-}
-ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: flex-start;
-    justify-content: flex-start;
+    font-size: 3em;
 }
 
 header {
     width: 90vw;
     margin-top: 10vh;
-    display: flex;
-    flex-flow: column wrap;
-    align-self: center;
     text-align: left;
 }
 
 header a {
     margin: 0 10vw;
-}
-
-.view_cart{
-    width:100vw;
-    font-size: 2em;
-}
-
-.breadcrumb {
-    height: 5vh;
-    width: 90vw;
-    text-align: left;
 }
 
 .container {
@@ -108,152 +67,4 @@ header a {
     align-content: flex-start;
     justify-content: center;
     align-self: center;
-}
-
-.pokecard {
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    justify-content: space-around;
-    text-align: center;
-    height: 30vh;
-    width: 25vh;
-    border-radius: 2em;
-    background: white;
-    margin: 1em;
-}
-
-.pokecard img {
-    height: 10vh;
-}
-
-.card_description {
-    font-size: .75em;
-}
-
-.product_page img {
-    height: 40vh;
-    margin: 2em;
-}
-
-.product_page {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 40vh;
-    width: 80vhw;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-.product-specs {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.cart_header{
-  font-size: 1.25em;
-    line-height: 2em;
-}
-
-.shopping_cart{
-    display:flex;
-    flex-flow:column nowrap;
-    width: 60vw;
-    }
-.product_row{
-    height: 4em;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: space-evenly;
-}
-.empty_cart{
-    width: 95vw;
-    text-align: right;
-}
-.empty_cart a:link{
-    font-size: .5em;
-}
-
-.cart_form{
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: left;
-}
-.name, .quantity, .price, .calc_price {
-    width: 10vw;
-    text-align: left;
-}
-.total{
-    width: 40vw;
-    line-height: 3em;
-    text-align: right;
-}
-.checkout{
-    margin: 1em;
-    font-size: 2em;
-}
-
-.checkout a:link{
-    color:coral;
-}
-
-
-
-input[type=text] {
-  height:2.5em;
-  border: 0;
-  width: calc(100% - .1em);
-  margin-left:.1em;
-  box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
-  -webkit-transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-}
-input[type=text]:focus {
-  outline: none;
-  box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
-}
-.checkout_info{
-    width: 40vw;
-    text-align: left;
-    margin-bottom: 5vh;
-}
-
-.checkout_info p{
-    font-family: 'Shrikhand', cursive;
-    margin-top: 2em;
-}
-
-.checkout_info input[placeholder]{
-    
-    font-size: 1em;
-    padding-left: 1em;
-}
-.citystatezip{
-    display:flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.citystatezip input[name=zip]{
-    width:20%;
-}
-.citystatezip input[name=city], input[name=state]{
-    width:39.5%;
-}
-.total{
-    width: 70%;
-    padding-right:5%;
-}
-
-.final_total{
-    display: flex;
-    align-items: center;
-}
-
-.quantity_input>input[type=text] {
-    max-width: 5vw;
-    text-align: right;
 }
