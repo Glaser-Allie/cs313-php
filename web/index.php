@@ -41,7 +41,7 @@ else {
 			Assignments
 			<span>
 				<svg>
-					<use xlink:href='#arrow' href='#arrow'></use>
+					
 				</svg>
 			</span>
 		</a>
