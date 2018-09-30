@@ -24,7 +24,7 @@ HTML;
 
 $footer = <<<HTML
 <!doctype HTML public>
-		<div>This is the Footer</div>
+		<div></div>
         
         </div><!-- End content-->
 	</div><!-- End container-->

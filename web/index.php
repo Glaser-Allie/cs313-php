@@ -11,7 +11,7 @@ if(isset($_GET['assignments'])) {
 	
     // Display Assignment Links
     
-    echo "<h2>Coming Soon!<br /></h2>";
+    echo "<h2>Assignments Coming Soon!<br /></h2>";
 	
 }
 
@@ -20,6 +20,7 @@ else {
 	// Display site links
 	
 	echo "<h2>Follow along as I figure out how the internet works</h2>";
+    echo "<div><a href='./index.php?assignments=1' class="assignments">Assignments</a></div>";
 }
 
 echo $footer;
