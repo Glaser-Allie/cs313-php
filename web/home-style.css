@@ -216,24 +216,24 @@ a:hover::after {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     
     li{
-        font-size: 2.5em;
+        font-size: 1em;
     }
     .container{
         height: 50vh;
         top: 30vh;
         width: 66vw;
-        padding: 1em 5em;
+        padding: 0;
     }
     .landing-message h1 {
-        font-size: 8em;
+        font-size: 3em;
         border-bottom: .05em #1DB9FF solid;
         margin-bottom: .5em;
     }
     .landing-message h2 {
-        font-size: 3.5em;
+        font-size: 1em;
         margin-bottom: 1em;
     }
     .innerbox a {
