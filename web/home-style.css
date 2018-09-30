@@ -37,6 +37,9 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+li a {
     color: white;
 }
 
