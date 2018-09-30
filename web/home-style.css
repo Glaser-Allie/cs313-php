@@ -51,7 +51,7 @@ ul {
     list-style: none;
 }
 
-li a::after {
+nav a::after {
   content: '';
   position: absolute;
   left: 50%;
