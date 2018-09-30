@@ -19,6 +19,8 @@ body {
 
 h1,
 h2,
+h5, 
+label
 {
     font-family: 'Shrikhand', cursive;
 }
