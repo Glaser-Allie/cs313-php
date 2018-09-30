@@ -15,7 +15,7 @@ $header = <<<HTML
     </div>
 		
     <header>
-        <div><a href='./index.php' class="assignments">Home</a></div>
+        <div><a href='http://cs313.alliegalser.com' class="menu">Home</a></div>
     </header>
         
 		<div class='content'>
