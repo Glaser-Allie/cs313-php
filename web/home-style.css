@@ -83,7 +83,7 @@ header a {
     position: absolute;
     background: rgba(255,255,255,.89);
     box-shadow: 2px 2px 24px 0 rgba(0,0,0,.1);
-    padding: 1em 2em;
+    padding: 1em 6em 1em 4em;
     height: 35vh;
     top: 40vh;
     text-align: left
