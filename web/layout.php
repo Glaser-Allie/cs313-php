@@ -18,8 +18,10 @@ $header = <<<HTML
     </header>
     
     <div class="container" >
-            <h1>Allie Attempts CS 313</h1>
-            <h2>follow along as she figures out the internet</h2>
+            <div class="landing-message">
+                <h1>Allie Attempts CS 313</h1>
+                <h2>follow along as she figures out the internet</h2>
+            </div>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <defs>
 	  <symbol id="arrow" viewBox="0 0 100 100">
