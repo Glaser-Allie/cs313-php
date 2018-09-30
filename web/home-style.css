@@ -48,6 +48,7 @@ nav a {
 
 ul {
     display: inline-flex;
+    list-style: none;
 }
 
 nav li a::after {
@@ -106,6 +107,8 @@ header a {
     align-content: flex-start;
     justify-content: center;
     align-self: center;
+    position: absolute;
+    top: 45vh;
 }
 
 .innerbox {
