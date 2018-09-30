@@ -11,6 +11,7 @@ $header = <<<HTML
 	<div class="container" >
         <a href='./index.php'>
             <h1>Allie attempts CS 313</h1>
+            <h2>Follow along as I figure out how the internet works</h2>
         </a>
     </div>
 		
