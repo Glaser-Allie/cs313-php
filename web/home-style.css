@@ -93,6 +93,7 @@ header a {
     box-shadow: 2px 2px 24px 0 rgba(0,0,0,.1);
     padding: 1em 6em 1em 4em;
     height: 35vh;
+    width: 75vw;
     top: 40vh;
     text-align: left
 }
