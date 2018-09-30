@@ -35,6 +35,10 @@ h2 {
     width: 100vw;
 }
 
+h3 {
+    font-size: 3em;
+}
+
 a {
     text-decoration: none;
     color: deeppink;
