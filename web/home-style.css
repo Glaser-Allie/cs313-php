@@ -37,6 +37,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: deeppink;
 }
 
 li a {
@@ -81,10 +82,13 @@ header a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    position: relative;
-    background: transparent;
+    position: absolute;
+    background: rgba(255,255,255,.89);
+    box-shadow: 2px 2px 24px 0 rgba(0,0,0,.1);
+    padding: 1em 2em;
     height: 35vh;
-    width: 80vw;
+    top: 40vh;
+    text-align: left
 }
 
 .content {
