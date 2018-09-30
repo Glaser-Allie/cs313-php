@@ -231,7 +231,7 @@ a:hover::after {
         height: 50vh;
         width: 66vw;
         padding: 2em;
-        position: absolute;
+        margin-top: -15vh;
     }
     .landing-message h1 {
         font-size: 3em;
