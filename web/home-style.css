@@ -216,7 +216,7 @@ a:hover::after {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 425px) {
     body {
         background-position: right;
     }
@@ -241,5 +241,10 @@ a:hover::after {
     .landing-message h2 {
         font-size: 1em;
         margin-bottom: 1em;
+    }
+    .content {
+        bottom: 20vh;
+        color: white;
+        
     }
 }
