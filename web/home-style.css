@@ -107,18 +107,6 @@ header a {
     align-self: center;
 }
 
-.homebox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ededed;
-  font-family: 'Droid Serif', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
 .button {
   position: relative;
   display: inline-flex;
