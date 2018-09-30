@@ -263,7 +263,7 @@ a:hover::after {
         width: 80vw;
     }
     
-    .assigned {
+    #assigned {
         flex-flow: column;
         padding: 0 2em;
     }
