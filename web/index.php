@@ -7,32 +7,21 @@ require("layout.php");
 echo $header;
 
 // Checkout
-if(isset($_GET['checkout'])) {
+if(isset($_GET['assignments'])) {
 	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'>Shoppe Home</a>";
-	
-	echo "<h2>Checkout</h2>";
     
-    echo "<p>Your cart is empty.<br /></p>";
+    echo "<p>Coming Soon!<br /></p>";
 	
 }
 
 // View home page
 else {
 	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'>Shoppe Home</a>";
+	echo "<a href='./index.php' class='breadcrumb'>Home</a>";
 	
-	echo "<h2>Hoenn Region Pok&eacute;mon</h2>";
+	echo "<h2>Follow along as I figure out how the internet works</h2>";
 
 	// Loop to display all products
-	foreach($products as $id => $product) {
-		echo "<div class='pokecard'>
-			<div><h4><a href='./index.php?view_product=$id'>" . $product['name'] . "</h4></div>
-            <div>" . $product['image'] . "</div></a>
-			<div class='card_description'>" . $product['type'] . "\n\n|\n\n" . $product['wave'] . "\n Wave</div>
-            <div>$" . $product['price'] . "</div>            
-		</div>";
-	}
 }
 
 echo $footer;
