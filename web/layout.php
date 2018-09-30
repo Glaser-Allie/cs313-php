@@ -11,8 +11,8 @@ $header = <<<HTML
     <header>
         <nav>
             <ul>
-                <li><a href="http://cs313.allieglaser.com/">Home</a></li>
-                <li><a href="./index.php?assignments=1">Assignments</a></li>
+                <li><a href='http://cs313.allieglaser.com/'>Home</a></li>
+                <li><a href='./index.php?assignments=1'>Assignments</a></li>
             </ul>
         </nav>
     </header>
