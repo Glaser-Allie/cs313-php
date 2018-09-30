@@ -217,6 +217,9 @@ a:hover::after {
 }
 
 @media only screen and (max-width: 600px) {
+    nav {
+        margin-top: 5vh;
+    }
     
     li{
         font-size: 1em;
@@ -225,7 +228,7 @@ a:hover::after {
         height: 50vh;
         top: 30vh;
         width: 66vw;
-        padding: 0;
+        padding: 2em;
     }
     .landing-message h1 {
         font-size: 3em;
@@ -235,9 +238,5 @@ a:hover::after {
     .landing-message h2 {
         font-size: 1em;
         margin-bottom: 1em;
-    }
-    .innerbox a {
-        font-size 2em;
-        padding: 1em 0;
     }
 }
