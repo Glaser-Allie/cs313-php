@@ -8,16 +8,19 @@ $header = <<<HTML
 	<link rel='stylesheet' type='text/css' href='./home-style.css' />
 </head>
 <body>
-	<div class="container" >
-        <a href='./index.php'>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://cs313.allieglaser.com/">Home</a></li>
+                <li><a href="./index.php?assignments=1">Assignments</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container" >
             <h1>Allie Attempts CS 313</h1>
             <h2>follow along as she figures out the internet</h2>
-        </a>
     </div>
-		
-    <header>
-        <div><a href="http://cs313.allieglaser.com/" class="menu">Home</a></div>
-    </header>
         
 		<div class='content'>
 HTML;
