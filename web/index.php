@@ -34,10 +34,8 @@ else {
 </svg>
 
 <div class='homebox'>
-	
 	<div class='innerbox'>
-		
-		<a href='./index.php?assignments=1' class='button'>
+		<a href='http://cs313.allieglaser.com/index.php?assignments=1' class='button'>
 			Assignments
 			<span>
 				<svg>
