@@ -23,6 +23,7 @@ h1
     font-size: 3.5em;
     line-height: 1;
     color: slategrey;
+    border-bottom: 2px #1DB9FF solid;
 }
 
 h2 {
