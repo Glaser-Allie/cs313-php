@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+nav {
+    margin-top: 5vh;
+}
+
 nav a {
     color: white;
 }
@@ -46,7 +50,7 @@ ul {
     display: inline-flex;
 }
 
-div a::after {
+nav li a::after {
   content: '';
   position: absolute;
   left: 50%;
