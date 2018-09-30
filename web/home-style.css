@@ -29,7 +29,6 @@ h1 {
 h2 {
     margin-bottom: 1em;
     width: 100vw;
-    text-align: left;
 }
 
 h3 {
@@ -69,10 +68,15 @@ header {
     width: 90vw;
     margin-top: 10vh;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-self: center;
-    text-align: right;
+    text-align: left;
 }
+
+header a {
+    margin: 0 10vw;
+}
+
 .view_cart{
     width:100vw;
     font-size: 2em;
