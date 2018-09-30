@@ -11,12 +11,10 @@ if(isset($_GET['assignments'])) {
 	
     // Display Assignment Links
     
-    echo "<h2 class='assignments'>Assignments Coming Soon!<br /></h2>";
-    "<div class='container'>
+    echo"<div class='container'>
             <div class='landing-message'>
                 <h2 class='assignments'>Assignments Coming Soon!<br /></h2>
-            </div>
-	
+            </div>";
 }
 
 // View home page
