@@ -11,7 +11,7 @@ if(isset($_GET['assignments'])) {
 	
     // Display Assignment Links
     
-    echo "<p>Coming Soon!<br /></p>";
+    echo "<h2>Coming Soon!<br /></h2>";
 	
 }
 

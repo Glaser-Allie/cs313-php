@@ -11,8 +11,8 @@ $header = <<<HTML
 	<div class="container" ><a href='./index.php'><h1>CS 313</h1></a></div>
 		
         <header>
-            <a href='./index.php' class="assignments">Home</a>
-            <br />
+            <p><a href='./index.php'>Home</a></p>
+            <br>
             <a href='./index.php?assignments=1' class="assignments">Assignments</a>
         </header>
         
