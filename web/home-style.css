@@ -27,7 +27,7 @@ h1
 
 h2 {
     font-size: 1.5em;
-    color: white;
+    color: darkcyan;
 }
 
 h3 {
@@ -36,10 +36,9 @@ h3 {
 
 a {
     text-decoration: none;
-    color: deeppink;
 }
 
-li a {
+nav a {
     color: white;
 }
 
