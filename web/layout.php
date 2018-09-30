@@ -6,6 +6,7 @@ $header = <<<HTML
 <head>
 	<title>CS313 on AllieGlaser.com</title>
 	<link rel='stylesheet' type='text/css' href='./home-style.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
 </head>
 <body>
     <header>
