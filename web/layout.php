@@ -10,8 +10,8 @@ $header = <<<HTML
 <body>
 	<div class="container" >
         <a href='./index.php'>
-            <h1>Allie attempts CS 313</h1>
-            <h2>Follow along as I figure out how the internet works</h2>
+            <h1>Allie Attempts CS 313</h1>
+            <h2>follow along as she figures out the internet</h2>
         </a>
     </div>
 		
