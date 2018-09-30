@@ -42,6 +42,10 @@ nav a {
     color: white;
 }
 
+ul {
+    display: inline-flex;
+}
+
 div a::after {
   content: '';
   position: absolute;
