@@ -232,6 +232,7 @@ a:hover::after {
         top: 30vh;
         width: 66vw;
         padding: 2em;
+        position: sticky;
     }
     .landing-message h1 {
         font-size: 3em;
