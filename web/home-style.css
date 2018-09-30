@@ -107,6 +107,16 @@ header a {
     align-self: center;
 }
 
+.landing-message{
+    margin: 1em 6em 1em 4em;
+}
+
+.innerbox {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
 .button {
   position: relative;
   display: inline-flex;
