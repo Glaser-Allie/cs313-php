@@ -15,7 +15,7 @@ $header = <<<HTML
     </div>
 		
     <header>
-        <div><a href='http://cs313.allieglaser.com/' class="menu">Home</a></div>
+        <div><a href="http://cs313.allieglaser.com/" class="menu">Home</a></div>
     </header>
         
 		<div class='content'>
