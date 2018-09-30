@@ -46,7 +46,7 @@ a {
 
 header {
     width: 90vw;
-    position:sticky;
+    position:absolute;
     top: 5vh;
     left: 5vw;
     text-align: left;
