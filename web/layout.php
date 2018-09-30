@@ -8,11 +8,11 @@ $header = <<<HTML
 	<link rel='stylesheet' type='text/css' href='./home-style.css' />
 </head>
 <body>
-	<div class="container" ><a href='./index.php'><h1>Allie takes CS 313</h1></a></div>
+	<div class="container" ><a href='./index.php'><h1>CS 313</h1></a></div>
 		
         <header>
             <a href='./index.php' class="assignments">Home</a>
-            <br>
+            <br />
             <a href='./index.php?assignments=1' class="assignments">Assignments</a>
         </header>
         
