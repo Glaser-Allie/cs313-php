@@ -15,13 +15,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 h1
 {
     font-family: 'Shrikhand', cursive;
-    font-size: 4em;
-    color: azure;
+    font-size: 3.5em;
+    line-height: 1;
+    color: darkcyan;
 }
 
 h2 {
@@ -55,6 +57,7 @@ header a {
     position: relative;
     background: transparent;
     height: 35vh;
+    width: 80vw;
 }
 
 .content {
