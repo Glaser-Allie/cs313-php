@@ -88,14 +88,15 @@ header a {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     background: rgba(255,255,255,.89);
     box-shadow: 2px 2px 24px 0 rgba(0,0,0,.1);
     padding: 1em 10em 1em 4em;
     height: 35vh;
     width: 60vw;
     top: 40vh;
-    text-align: left
+    text-align: left;
+    left: 0;
 }
 
 .content {
