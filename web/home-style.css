@@ -6,7 +6,7 @@
     }
 
 body {
-    background: whitesmoke;
+    background-image: url(images/galveston.jpg);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     display: flex;
