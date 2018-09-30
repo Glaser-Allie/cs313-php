@@ -242,9 +242,12 @@ a:hover::after {
         font-size: 1em;
         margin-bottom: 1em;
     }
-    .content {
+    div .content {
         bottom: 20vh;
         color: white;
-        
+    }
+    
+    .content h2 {
+        color: white;
     }
 }
