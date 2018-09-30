@@ -39,7 +39,7 @@ a {
     color: deeppink;
 }
 
-a::after {
+div a::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -50,12 +50,12 @@ a::after {
           transform-origin: 50% 50%;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: hotpink;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
 }
-a:hover::after {
+div a:hover::after {
   -webkit-transform: translateX(-50%) scaleX(1);
           transform: translateX(-50%) scaleX(1);
 }
