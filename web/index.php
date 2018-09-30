@@ -3,6 +3,9 @@ session_start();
 
 require("layout.php");
 
+// **DISPLAY PAGE**
+echo $header;
+
 // Assignments
 if(isset($_GET['assignments'])) {
 	
