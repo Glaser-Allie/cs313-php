@@ -236,6 +236,9 @@ a:hover::after {
     line-height: 1;
 }
 .first_li{
+    position: relative;
+    padding: 1rem 0 0.5rem;
+    margin: 0 1.5rem;
     color: darkslateblue;
 }
 @media only screen and (max-width: 425px) {
