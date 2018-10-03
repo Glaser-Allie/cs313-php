@@ -15,12 +15,12 @@ if(isset($_GET['assignments'])) {
             <div class='assignments'>
                 <h2>Assignments<br /></h2>
                 <ul>
-                    <li><a href='#' class='first_li'>Week 3</a></li>
+                    <li class='first_li'>Week 3</li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: Shopping cart</a></li>
                 </ul>
                 <ul>
-                    <li><a href='#' class='first_li'>Week 4</a></li>
+                    <li class='first_li'>Week 4</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
