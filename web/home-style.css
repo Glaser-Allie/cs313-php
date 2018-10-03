@@ -99,10 +99,15 @@ a:hover::after {
           transform: translateX(-50%) scaleX(1);
 }
 
-.assigned li a {
+#assigned li a {
     color: blue;
 }
 
+
+#assigned ul {
+    display: flex;
+    flex-flow: row wrap;
+}
 .container {
     display: flex;
     flex-flow: column nowrap;
