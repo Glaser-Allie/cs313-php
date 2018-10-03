@@ -223,7 +223,7 @@ a:hover::after {
             transform: translateX(0px);
   }
 }
-#assigned .container {
+.container#assigned  {
     height: 60vh;
     top: 20vh;
 }
