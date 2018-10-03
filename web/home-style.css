@@ -234,12 +234,13 @@ a:hover::after {
     margin: 0;
     padding: 0;
     line-height: 1;
+    border-bottom: .25px solid slategrey;
 }
 .first_li{
     position: relative;
     padding: 1rem 0 0.5rem;
     margin: 0 1.5rem;
-    color: darkslateblue;
+    color: darkslategrey;
 }
 @media only screen and (max-width: 425px) {
     body {
