@@ -16,9 +16,10 @@ if(isset($_GET['assignments'])) {
                 <h2>Assignments<br /></h2>
                 <h3>Week 3<br /></h3>
                 <ul>
-                    <li><a href='#'>Team Activity</a></li>
-                    <li><a href='#'>Ponder: Shopping cart</a></li>
-                </ul>
+                <li><a href='http://cs313.allieglaser.com/'>Home</a></li>
+                <li><a href='./index.php?assignments=1'>Assignments</a></li>
+            </ul>
+                
             </div>";
 }
 
