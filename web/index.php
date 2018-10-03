@@ -11,7 +11,7 @@ if(isset($_GET['assignments'])) {
 	
     // Display Assignment Links
     
-    echo"<div class='container' id='assigned'>
+    echo"<div class='container assigned'>
             <div class='assignments'>
                 <h1>Assignments<br /></h1>
                 <ul>

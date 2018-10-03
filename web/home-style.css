@@ -223,22 +223,23 @@ a:hover::after {
             transform: translateX(0px);
   }
 }
+
 .container.assigned  {
     height: 60vh;
     top: 20vh;
-    padding: 2em 10em;
+    padding: em 10em;
     font-size: 85%;
 }
 
-.assignments h1 {
+.assigned h1 {
     border-bottom: none;
 }
 
-.assignments a {
+.assigned a {
     color: blue;
 }
 
-.assignments ul {
+.assigned ul {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
@@ -248,13 +249,13 @@ a:hover::after {
     width: 35vw;
 }
 
-.assignments ul li:first-child{
+.assigned ul li:first-child{
     position: relative;
     padding: 1rem 0 0.5rem;
     margin: 0 1.5rem;
     color: darkslategrey;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     body {
         background-position: right;
     }
@@ -269,8 +270,7 @@ a:hover::after {
         height: 50vh;
         width: 66vw;
         padding: 1em;
-        margin-top: -15vh;
-    }
+      }
     .landing-message h1 {
         font-size: 3em;
         border-bottom: .05em #1DB9FF solid;
@@ -281,18 +281,39 @@ a:hover::after {
         margin-bottom: 1em;
     }
     .assignments h1{
-        font-size: 340%;
+        font-size: 240%;
     }
     .assignments li{
-        font-size: 50%
+        font-size: 80%;
+        line-height: .5;
     }
+    .assignments ul:first-of-type{
+        margin-top:5vh;
+    }
+        
     .assignments ul{ 
-    width: 60vw}
-    
-    .container .assignments {
-        height: 90vh;
+        width: 65vw;
     }
+    .assignments {
+        height: 90%;
+    }
+}
 
+@media only screen and (max-width: 600px) {
+    .container.assigned {
+        width: 80vw;
+        height: 70vh;
+    }
+    .assigned ul{
+        width:75vw;
+        font-size: .75em;
+       }
+    .assigned ul{
+       display: flex;
+        flex-flow: column wrap;
+        width: 30vw;
+    }
+}
 @media only screen and (max-height: 425px) {
     .landing-message{
         font-size: 80%;
