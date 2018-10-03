@@ -223,7 +223,7 @@ a:hover::after {
             transform: translateX(0px);
   }
 }
-.container#assigned  {
+.container.assigned  {
     height: 60vh;
     top: 20vh;
     padding: 2em 10em;
@@ -248,7 +248,7 @@ a:hover::after {
     width: 35vw;
 }
 
-.first_li{
+.assignments ul li:first-child{
     position: relative;
     padding: 1rem 0 0.5rem;
     margin: 0 1.5rem;
@@ -268,7 +268,7 @@ a:hover::after {
     .container{
         height: 50vh;
         width: 66vw;
-        padding: 2em;
+        padding: 1em;
         margin-top: -15vh;
     }
     .landing-message h1 {
@@ -280,10 +280,18 @@ a:hover::after {
         font-size: 1em;
         margin-bottom: 1em;
     }
-    .assignments{
-        font-size: 140%;
+    .assignments h1{
+        font-size: 340%;
     }
-}
+    .assignments li{
+        font-size: 50%
+    }
+    .assignments ul{ 
+    width: 60vw}
+    
+    .container .assignments {
+        height: 90vh;
+    }
 
 @media only screen and (max-height: 425px) {
     .landing-message{
@@ -300,7 +308,7 @@ a:hover::after {
         width: 80vw;
     }
     
-    #assigned {
+    .container.assigned {
         flex-flow: column;
         padding: 0 2em;
     }

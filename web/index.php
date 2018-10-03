@@ -15,37 +15,37 @@ if(isset($_GET['assignments'])) {
             <div class='assignments'>
                 <h1>Assignments<br /></h1>
                 <ul>
-                    <li class='first_li'>Week 3</li>
+                    <li>Week 3</li>
                     <li><a href='/team/wk3'>Team Activity</a></li>
                     <li><a href='/store'>Ponder: Store</a></li>
                 </ul>
                 <ul>
-                    <li class='first_li'>Week 4</a></li>
+                    <li>Week 4</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
                 <ul>
-                    <li class='first_li'>Week 4</a></li>
+                    <li>Week 4</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
                 <ul>
-                    <li class='first_li'>Week 5</a></li>
+                    <li>Week 5</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
                 <ul>
-                    <li class='first_li'>Week 6</a></li>
+                    <li>Week 6</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
                 <ul>
-                    <li class='first_li'>Week 7</a></li>
+                    <li>Week 7</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
                 <ul>
-                    <li class='first_li'>Week 8</a></li>
+                    <li>Week 8</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
