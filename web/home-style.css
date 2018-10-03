@@ -223,19 +223,25 @@ a:hover::after {
             transform: translateX(0px);
   }
 }
+#assigned .container {
+    height: 60vh;
+    top: 20vh;
+}
 
-#assigned a {
+.assignments a {
     color: blue;
 }
 
-#assigned ul {
+.assignments ul {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
     padding: 0;
     line-height: 1;
     border-bottom: .25px solid slategrey;
+    width: 35vw;
 }
+
 .first_li{
     position: relative;
     padding: 1rem 0 0.5rem;
