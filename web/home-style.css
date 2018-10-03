@@ -230,8 +230,8 @@ a:hover::after {
     font-size: 85%;
 }
 
-#assigned h1 {
-    border: none;
+.assignments h1 {
+    border-bottom: none;
 }
 
 .assignments a {
