@@ -13,7 +13,7 @@ if(isset($_GET['assignments'])) {
     
     echo"<div class='container' id='assigned'>
             <div class='assignments'>
-                <h2>Assignments<br /></h2>
+                <h1>Assignments<br /></h1>
                 <ul>
                     <li class='first_li'>Week 3</li>
                     <li><a href='/team/wk3'>Team Activity</a></li>

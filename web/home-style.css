@@ -230,6 +230,10 @@ a:hover::after {
     font-size: 85%;
 }
 
+#assigned h1 {
+    border: none;
+}
+
 .assignments a {
     color: blue;
 }
