@@ -99,15 +99,7 @@ a:hover::after {
           transform: translateX(-50%) scaleX(1);
 }
 
-#assigned li a {
-    color: blue;
-}
 
-
-#assigned ul {
-    display: flex;
-    flex-flow: row wrap;
-}
 .container {
     display: flex;
     flex-flow: column nowrap;
@@ -230,6 +222,15 @@ a:hover::after {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+#assigned a {
+    color: blue;
+}
+
+#assigned ul {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 @media only screen and (max-width: 425px) {
