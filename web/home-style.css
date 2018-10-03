@@ -254,7 +254,7 @@ a:hover::after {
     margin: 0 1.5rem;
     color: darkslategrey;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 800px) {
     body {
         background-position: right;
     }
