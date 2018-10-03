@@ -24,6 +24,31 @@ if(isset($_GET['assignments'])) {
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
+                <ul>
+                    <li class='first_li'>Week 4</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
+                <ul>
+                    <li class='first_li'>Week 5</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
+                <ul>
+                    <li class='first_li'>Week 6</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
+                <ul>
+                    <li class='first_li'>Week 7</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
+                <ul>
+                    <li class='first_li'>Week 8</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
             </div>";
 }
 
