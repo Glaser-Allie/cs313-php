@@ -32,6 +32,7 @@ h1
     line-height: 1;
     color: slategrey;
     border-bottom: 2px #1DB9FF solid;
+    margin-bottom: .5em;
 }
 
 h2 {
@@ -104,8 +105,8 @@ a:hover::after {
     position: fixed;
     background: rgba(255,255,255,.89);
     box-shadow: 2px 2px 24px 0 rgba(0,0,0,.1);
-    padding: 1em 10em;
-    height: 40vh;
+    padding: 2em 10em;
+    height: 35vh;
     width: 50vw;
     top: 40vh;
     text-align: left;
@@ -253,7 +254,7 @@ a:hover::after {
     border-bottom: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     body {
         background-position: right;
     }
@@ -265,53 +266,62 @@ a:hover::after {
         font-size: 1em;
     }
     .container{
-        height: 50vh;
+        height: 45vh;
         width: 70vw;
-        padding: 1em;
-        margin-top: -15vh
-      }
-    .landing-message {padding: 1em;}
+        padding: 3em;
+        margin-top: -15vh;
+    }
+    .landing-message{
+        width: 50vw;
+    }
     .landing-message h1 {
-        font-size: 4em;
+        font-size: 4rem;
         border-bottom: .05em #1DB9FF solid;
         margin-bottom: .5em;
     }
     .landing-message h2 {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-bottom: 1em;
     }
+    .container.assigned {
+        height: 70vh;
+        padding-left: 3em;
+        top: 35vh
+    }
+    .assigned h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+        height: 2rem;
+    }
     
+    .assigned li a{
+        font-size: .8em;
+    }
+    
+    .assigned ul {
+        width: 30vw
+    }
+
+   
 }
+
 @media only screen and (max-width: 550px) {
     .container{
-        height: 55vh;
-        width: 70vw;
+        height: 45vh;
+        width: 60vw;
+        padding: 1em 3em 1em 2em;
     }
-    .container.assigned {
-        width: 80vw;
-        height: 70vh;
+    .landing-message {
+        padding: 1em;
+        width: 60vw;
     }
-    .assignments{
-        margin: 0;
-        width: 80vw; 
-        display: flex;
-        flex-flow: row wrap;
+    .landing-message h1 {
+        font-size: 3rem;
     }
-    .assignments h1{
-        margin-left: 4vw;
-        height: 0;
+    .landing-message h2 {
+        font-size: 1.2em;
     }
-    .assignments ul{
-        width:50%;
-        margin-left:0;
-    }
-    .assignments ul:first-of-type{
-        margin-top:0;
-    }
-    .assignments li a{
-        padding: 0;
-        font-size: .8rem;
-    }
+   
 
 }
 @media only screen and (max-height: 425px) {
