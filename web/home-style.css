@@ -334,19 +334,34 @@ a:hover::after {
     .landing-message{
         font-size: 80%;
     }
-    
     .landing-message h1 {
         margin-bottom: .25em;
     }
-    
     .container {
         flex-flow: row;
         padding: 1em;   
         width: 80vw;
     }
-    
-    .container.assigned {
-        flex-flow: column;
-        padding: 0 2em;
+    .assignments h1{
+        margin-bottom: 2rem;
+        width: 80vw;
+        font-size: 1.5rem;
+      margin-left: 1rem;
     }
+    .container.assigned{
+        width: 85vw;
+        height: 55vh;
+    }
+    .assignments{
+        margin: 0;
+        width: 90vw; 
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .assignments ul{
+        width:25%;
+        font-size: 1rem;
+    }
+     .assignments li a{
+        font-size: .6rem; 
 }
