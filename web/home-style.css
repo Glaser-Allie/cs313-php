@@ -350,17 +350,20 @@ a:hover::after {
 }
 @media only screen and (max-height: 425px) {
     .landing-message h2{
-        font-size: 60%;
+        font-size: 1.2em;
+        margin: 0 0 1rem 1rem;
     }
     .landing-message h1 {
-        margin-bottom: .25em;
-        font-size: 2rem;
+        margin: 1rem;
+        font-size: 2.5rem;
+        width: 75vw;
     }
     .container {
         flex-flow: row;
-        padding: 1em;   
+        padding: 1rem;   
         width: 80vw;
         height: 45vh;
+        top 45vh;
     }
     .assignments h1{
         width: 80vw;
