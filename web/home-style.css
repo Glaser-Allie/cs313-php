@@ -390,3 +390,10 @@ a:hover::after {
          line-height: 1.3rem;
     }         
 }
+
+@media only screen and (max-height: 400px and min-width: 800px) {
+    .container .assigned{
+        top: 30vh;
+        height: 55vh;
+    }
+}
