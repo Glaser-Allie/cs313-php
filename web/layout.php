@@ -7,6 +7,11 @@ $header = <<<HTML
 	<title>CS313 on AllieGlaser.com</title>
 	<link rel='stylesheet' type='text/css' href='./home-style.css' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <!--iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--Android-->
+    <meta name="mobile-web-app-capable" content="yes">
 </head>
 <body>
     <header>

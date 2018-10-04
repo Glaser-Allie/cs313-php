@@ -255,7 +255,7 @@ a:hover::after {
     margin: 0 1.5rem;
     color: darkslategrey;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     body {
         background-position: right;
     }
@@ -267,9 +267,10 @@ a:hover::after {
         font-size: 1em;
     }
     .container{
-        height: 50vh;
+        height: 60vh;
         width: 70vw;
         padding: 1em;
+        margin-top: -15vh
       }
     .landing-message h1 {
         font-size: 3em;
@@ -301,7 +302,6 @@ a:hover::after {
         margin: .3rem 1em;
     }
 }
-
 @media only screen and (max-width: 550px) {
     .container.assigned {
         width: 80vw;
