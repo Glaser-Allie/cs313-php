@@ -363,7 +363,7 @@ a:hover::after {
         padding: 1rem;   
         width: 80vw;
         height: 45vh;
-        top 45vh;
+        top: 45vh;
     }
     .assignments h1{
         width: 80vw;
@@ -391,7 +391,7 @@ a:hover::after {
     }         
 }
 
-@media only screen and (max-height: 425px and min-width: 800px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .container .assigned{
         top: 30vh;
         height: 55vh;
