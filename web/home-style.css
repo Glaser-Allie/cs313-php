@@ -391,7 +391,7 @@ a:hover::after {
     }         
 }
 
-@media only screen and (max-height: 400px and min-width: 800px) {
+@media only screen and (max-height: 425px and min-width: 800px) {
     .container .assigned{
         top: 30vh;
         height: 55vh;
