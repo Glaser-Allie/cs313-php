@@ -10,7 +10,7 @@
 
   "icons": [{ 
 
-    "src": "/images/logo-pwa.png", 
+    "src": "./images/apple-touch-icon.png", 
 
     "sizes": "192x192", 
 
