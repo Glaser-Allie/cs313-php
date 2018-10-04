@@ -341,6 +341,7 @@ a:hover::after {
         flex-flow: row;
         padding: 1em;   
         width: 80vw;
+        height: 45vh;
     }
     .assignments h1{
         margin-bottom: 2rem;
