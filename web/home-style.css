@@ -368,7 +368,7 @@ a:hover::after {
     .assignments h1{
         width: 80vw;
         font-size: 1.5rem;
-        height 5vh;
+        height: 5vh;
     }
     .container.assigned{
         height: 60vh;
