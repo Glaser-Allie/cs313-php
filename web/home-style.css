@@ -309,6 +309,7 @@ a:hover::after {
     .container{
         height: 55vh;
         width: 60vw;
+        top: 30vh;
         padding: 1em 3em 1em 2em;
     }
     .landing-message {
