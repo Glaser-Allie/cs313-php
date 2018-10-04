@@ -58,7 +58,7 @@ else {
 	 
     echo "<div class='container'>
             <div class='landing-message'>
-                <h1>Allie Attempts CS 313</h1>
+                <h1>Allie Attempts CS313</h1>
                 <h2>follow along as she (maybe) figures out the internet</h2>
             </div>
     <svg xmlns='http://www.w3.org/2000/svg' style='display: none;'>
