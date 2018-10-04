@@ -99,7 +99,6 @@ a:hover::after {
           transform: translateX(-50%) scaleX(1);
 }
 
-
 .container {
     display: flex;
     flex-flow: column nowrap;
@@ -108,7 +107,7 @@ a:hover::after {
     background: rgba(255,255,255,.89);
     box-shadow: 2px 2px 24px 0 rgba(0,0,0,.1);
     padding: 1em 10em;
-    height: 35vh;
+    height: 30vh;
     width: 50vw;
     top: 40vh;
     text-align: left;
