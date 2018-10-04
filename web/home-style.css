@@ -391,7 +391,7 @@ a:hover::after {
     }         
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape)  {
+@media only screen and (min-device-width: 812px) and (max-device-height: 375px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape)  {
     .container .assigned{
         top: 30vh;
         height: 55vh;
