@@ -12,6 +12,7 @@ $header = <<<HTML
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!--Android-->
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="./maifest.json">
 </head>
 <body>
     <header>
