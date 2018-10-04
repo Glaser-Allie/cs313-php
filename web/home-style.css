@@ -321,7 +321,31 @@ a:hover::after {
     .landing-message h2 {
         font-size: 1.2em;
     }
-   
+    .container.assigned {
+        width: 80vw;
+        height: 60vh;
+        padding: 1em 0 1em 2em
+    }
+    .assignments{
+        margin: 0;
+        width: 80vw; 
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .assignments li a{
+        padding: 0;
+        font-size: .7rem;
+    }
+    .assignments ul{
+        margin-left:0;
+    }
+  
+    .assignments li a{
+      font-size: .8rem;
+        line-height: 1.2rem;
+    }
+ 
+ 
 
 }
 @media only screen and (max-height: 425px) {
