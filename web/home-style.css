@@ -368,9 +368,9 @@ a:hover::after {
         height 5vh;
     }
     .container.assigned{
-        height: 50vh;
+        height: 60vh;
         width: 80vw;
-        top: 35vh;
+        top: 40vh;
         padding: 1rem 2rem 1rem 2rem;
     }
     .assignments{
