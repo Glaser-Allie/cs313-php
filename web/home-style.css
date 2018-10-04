@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    }
+}
 
 body {
     background-image: url(images/galveston.png);
@@ -16,8 +16,9 @@ body {
     display: flex;
     flex-flow: column nowrap;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
 }
+
 body:after {
   content: '';
   position: absolute;
@@ -25,8 +26,7 @@ body:after {
   background: radial-gradient(circle, transparent 60%, black 150%);
 }
 
-h1
-{
+h1 {
     font-family: 'Shrikhand', cursive;
     font-size: 3.5em;
     line-height: 1;
