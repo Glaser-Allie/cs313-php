@@ -226,8 +226,9 @@ a:hover::after {
 .container.assigned  {
     height: 60vh;
     top: 20vh;
-    padding: em 10em;
+
     font-size: 85%;
+    top: 35vh;
 }
 
 .assigned h1 {
@@ -242,16 +243,14 @@ a:hover::after {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
-    padding: 0;
-    line-height: 1;
     border-bottom: .25px solid slategrey;
     width: 35vw;
 }
 
 .assigned ul li:first-child{
     position: relative;
-    padding: 1rem 0 0.5rem;
-    margin: 0 1.5rem;
+    padding: 1rem 0 0 0;
+    margin: 0 1rem;
     color: darkslategrey;
 }
 @media only screen and (max-width: 1000px) {
@@ -289,8 +288,7 @@ a:hover::after {
     }
     .assignments ul:first-of-type{
         margin-top:5vh;
-    }
-        
+    }   
     .assignments ul{ 
         width: 70vw;
     }
