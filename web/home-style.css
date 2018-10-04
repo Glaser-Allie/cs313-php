@@ -130,6 +130,7 @@ a:hover::after {
   position: relative;
   display: inline-flex;
   text-decoration: none;
+    bottom: 0;
   color: #fff;
   background-color: #76abe9;
   padding-left: 2rem;
@@ -362,25 +363,24 @@ a:hover::after {
         height: 45vh;
     }
     .assignments h1{
-        margin:0 0 .25rem 0;
         width: 80vw;
         font-size: 1.5rem;
-     
+        height 5vh;
     }
     .container.assigned{
-        width: 85vw;
-        height: 55vh;
-        top: 40vh;
+        height: 50vh;
+        width: 80vw;
+        top: 35vh;
+        padding: 1rem 2rem 1rem 2rem;
     }
     .assignments{
         margin: 0;
-        width: 90vw; 
-        display: flex;
-        flex-flow: row wrap;
+        width: 80vw; 
     }
     .assignments ul{
-        width:20%;
-        font-size: .7rem;
+        width:20vw;
+        font-size: .8rem;
+        margin: .5rem 0 .5rem;
     }
      .assignments li a{
         font-size: .7rem; 
