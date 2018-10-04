@@ -255,7 +255,7 @@ a:hover::after {
     margin: 0 1.5rem;
     color: darkslategrey;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     body {
         background-position: right;
     }
@@ -268,7 +268,7 @@ a:hover::after {
     }
     .container{
         height: 50vh;
-        width: 66vw;
+        width: 70vw;
         padding: 1em;
       }
     .landing-message h1 {
@@ -284,7 +284,7 @@ a:hover::after {
         font-size: 240%;
     }
     .assignments li{
-        font-size: 80%;
+        font-size: .9rem;
         line-height: .5;
     }
     .assignments ul:first-of-type{
@@ -292,27 +292,43 @@ a:hover::after {
     }
         
     .assignments ul{ 
-        width: 65vw;
+        width: 70vw;
     }
     .assignments {
         height: 90%;
     }
+    .assignments a{ 
+        margin: .3rem 1em;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
     .container.assigned {
         width: 80vw;
         height: 70vh;
     }
-    .assigned ul{
-        width:75vw;
-        font-size: .75em;
-       }
-    .assigned ul{
-       display: flex;
-        flex-flow: column wrap;
-        width: 30vw;
+    .assignments{
+        margin: 0;
+        width: 80vw; 
+        display: flex;
+        flex-flow: row wrap;
     }
+    .assignments h1{
+        margin-left: 5vw;
+        height: 0;
+    }
+    .assignments ul{
+        width:50%;
+        margin-left:0;
+        font-size: 1.2em;
+    }
+    .assignments ul:first-of-type{
+        margin-top:0;
+    }
+    .assignments li a{
+        padding: 0;
+    }
+
 }
 @media only screen and (max-height: 425px) {
     .landing-message{
