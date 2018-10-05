@@ -1,10 +1,10 @@
 { 
 
-  "name": "AllieGlaser.com", 
+  "name": "CS313 on AllieGlaser.com", 
 
-  "short_name": "AllieGlaser", 
+  "short_name": "CS313", 
 
-  "start_url": "index.html", 
+  "start_url": ".", 
 
   "display": "standalone", 
 
