@@ -78,9 +78,8 @@ if(isset($_GET['view_product'])) {
             <div class='product_img'>" . $products[$product_id]['image'] . "</div><br />
 			<div class='product_specs'>
                 <div><h3>" . $products[$product_id]['name'] . "</h3></div><br />
-			     <div>" . $products[$product_id]['type'] . "</div><br />
-                <div><h4>$" . $products[$product_id]['price'] . "</h4><br />for\n3\SnoCones</div><br />
-            
+			     <div>" . $products[$product_id]['type'] . "</div><br />			<div class='item_description'>" . $products[$product_id]['description'] . "</div>
+                <div><h4>$" . $products[$product_id]['price'] . "
 			<div>
 				<form action='./index.php?view_product=$product_id' method='post'>
 					<select name='quantity'>
@@ -245,7 +244,6 @@ else {
 		echo "<div class='item_display'>
 			<div><h4><a href='./index.php?view_product=$id'>" . $product['name'] . "</h4></div>
             <div>" . $product['image'] . "</div></a>
-			<div class='item_description'>" . $product['description'] . "</div>
             <div class='price'>$" . $product['price'] . "</div>            
 		</div>";
 	}

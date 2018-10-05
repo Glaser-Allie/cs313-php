@@ -64,7 +64,7 @@ $products = array(
 		'name' => 'Hurricane',
 		'type' => 'Tropical',
 		'price' => '4.50',
-        'description' => 'The New Orleans classic, minus the rum. Southern style Passion Fruit, Orange, and Lime juice suryp topped with an orange slice and and a maraschino cherry.',
+        'description' => 'The New Orleans classic, minus the rum. Southern style, topped with an orange slice and a maraschino cherry.',
         'image' => '<img src="images/hurricane.png">'
 	),	11 => array(
 		'name' => 'Watermelon',
