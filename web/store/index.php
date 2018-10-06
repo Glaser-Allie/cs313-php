@@ -77,7 +77,7 @@ if(isset($_GET['view_product'])) {
 		echo "<div class='product_page'>
             <div class='product_img'>" . $products[$product_id]['image'] . "</div><br />
 			<div class='product_specs'>
-                <div><h3>" . $products[$product_id]['name'] . "</h3></div><br />
+                <h3>" . $products[$product_id]['name'] . "</h3><br />
                 <div class='item_description'>" . $products[$product_id]['description'] . "</div>
                 <div><h4>$" . $products[$product_id]['price'] . "
 			<div>
@@ -94,7 +94,7 @@ if(isset($_GET['view_product'])) {
                         <option value='9'>9</option>
 					</select>
 					<input type='hidden' name='product_id' value='$product_id' />
-					<input type='submit' name='add_to_cart' value='Add to cart' />
+					<button type='submit' name='add_to_cart' value='Add to cart'>Add to cart</button>
 				</form>
 			</div>
             </div>
@@ -145,8 +145,8 @@ else if(isset($_GET['view_cart'])) {
 }
 // Checkout
 else if(isset($_GET['checkout'])) {
-	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'>Store Home</a>";
+	// Display breadcrumbs
+	echo "<a href='./index.php' class='crumbs'>Back to Cart</a>";
 	
 	echo "<h2>Checkout</h2>";
 	
@@ -213,8 +213,6 @@ else if(isset($_GET['checkout'])) {
 }
 // Purchase Complete
 else if(isset($_GET['purchase_complete'])) {
-	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'>Store Home</a>";
 	
 	echo "<h2>Purchase Complete</h2>";
 	

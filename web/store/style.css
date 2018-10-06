@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Shrikhand');
-@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
+
 * {
     margin: 0;
     padding: 0;
@@ -21,18 +21,20 @@ label {
 }
 
 h1 {
-    font-size: 5em;
-    color: azure;
+    font-size: 7em;
+    color: white;
+    width: 80vw;
 }
 
 h2 {
-    margin-bottom: 1em;
+    margin: 3rem 0 1rem 0;
     width: 90vw;
     font-size: 3em
 }
 
 h3 {
-    font-size: 2.75em;
+    font-size: 1.75em;
+    color: deeppink;
 }
 
 h4,
@@ -42,7 +44,11 @@ h5 {
 }
 
 h5 {
-    color: darkmagenta;
+    color: magenta;
+}
+
+h4 {
+    margin-top: 1rem;
 }
 
 h4 a:link,
@@ -72,7 +78,7 @@ ul {
 
 header {
     width: 90vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     align-self: center;
     justify-content: space-between;
     
@@ -82,7 +88,7 @@ nav {
     display: flex;
     width: 90vw;
     align-self: center;
-    margin-bottom: 5vh
+    margin-bottom: 5vh;
 }
 
 .left {
@@ -94,12 +100,13 @@ nav {
 .home_icon {
     height: 10vh;
 }
-
+.center {}
 .right {
-    width: 80%;
+    width: 20%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: .8rem;
 }
 .cart_icon {
     height: 5vh;
@@ -165,20 +172,15 @@ nav {
 
 .item_display img {
     height: 30vh;
-     filter: drop-shadow(2px 3px 2px lightgrey);
-}
-
-.item_description {
-    font-size: .9rem;
-    padding: 1.5rem;
+    filter: drop-shadow(2px 3px 2px lightgrey);
 }
 
 .item_price {
-    color: aqua;
+    color: darkblue;
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
 }
 
 
@@ -187,18 +189,26 @@ nav {
 .product_page {
     display: flex;
     flex-flow: row nowrap;
-    width: 80vhw;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
 }
 
-.product-specs {
+.product_specs {
     display: flex;
     flex-flow: column nowrap;
-    width: 60vw;
+    width: 40%;
 }
 
 .product_page img {
-    height: 40vh;
+    height: 60vh;
     margin: 2em;
+}
+
+.item_description {
+    font-size: 1.5rem;
+    width: 30vw;
+    align-self: center;
 }
 
 

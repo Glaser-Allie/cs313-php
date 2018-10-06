@@ -37,7 +37,7 @@ $products = array(
         'description' => 'So refreshing - Coconut milk & pineapple juice toppped with a slice of fresh pineapple and a maraschino cherry. ',
         'image' => '<img src="images/pina_colada-min.png">'
 	),	6 => array(
-		'name' => 'Super Pucker Blue Raspberry',
+		'name' => 'Blue Raspberry',
 		'type' => 'Sour',
         'price' => '3.00',
         'description' => 'The tartest Sno-Cone you will EVER taste!',
