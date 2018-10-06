@@ -67,9 +67,9 @@ if(isset($_GET['view_product'])) {
 	$product_id = $_GET['view_product'];
 	
 	if(isset($products[$product_id])) {
-		// Display site links
-		echo "<div class='breadcrumb'>
-			<a href='./index.php' class='breadcrumb'>Store Home</a> &gt; <a href='./index.php'>" . 
+		// Display breadcrumbs
+		echo "<div class='crumbs'>
+			<a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . 
 			$products[$product_id]['type'] . "</a></div>";
 		
 		
@@ -78,7 +78,7 @@ if(isset($_GET['view_product'])) {
             <div class='product_img'>" . $products[$product_id]['image'] . "</div><br />
 			<div class='product_specs'>
                 <div><h3>" . $products[$product_id]['name'] . "</h3></div><br />
-			     <div>" . $products[$product_id]['type'] . "</div><br />			<div class='item_description'>" . $products[$product_id]['description'] . "</div>
+                <div class='item_description'>" . $products[$product_id]['description'] . "</div>
                 <div><h4>$" . $products[$product_id]['price'] . "
 			<div>
 				<form action='./index.php?view_product=$product_id' method='post'>
@@ -106,8 +106,6 @@ if(isset($_GET['view_product'])) {
 }
 // View cart
 else if(isset($_GET['view_cart'])) {
-	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'>Store Home</a>";
 	
 	echo "<h2>Your Cart</h2>";
 	
@@ -139,7 +137,9 @@ else if(isset($_GET['view_cart'])) {
 			<div class='checkout'>
 				<a href='./index.php?checkout=1'>Checkout</a>
 			</div>
-            
+            <div class='empty'>
+                    <a href='./index.php?empty_cart=1' class='empty_cart'>Empty Cart</a>
+                </div>
             ";
 	}
 }
@@ -206,9 +206,8 @@ else if(isset($_GET['checkout'])) {
             
 			<br />
             <input type='hidden'></input>
-            <a href='./index.php?purchase_complete'><input type='submit' value='Complete Purchase'></a>
+            <a href='./index.php?purchase_complete'><button type='submit' class='pink'>Complete Purchase</button></a>
             </div>";
-            
                 }
 	}
 }

@@ -15,15 +15,15 @@ $header = <<<HTML
             <nav>
     
                 <div class='left'>
-                    <a href='./index.php' class='breadcrumb'><img src='./images/snocone_icon.svg' alt='SnoCone Icon Home Link' class='home_icon'>SnoHome</a>
+                    <a href='./index.php'><img src='./images/snocone_icon.svg' alt='SnoCone Icon Home Link' class='home_icon'></a>
                 </div>
     
                 <div class='right'>
-                    <a href='./index.php?view_cart=1' class="view_cart"><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'>View Cart</a>
-                    <a href='./index.php?empty_cart=1' class="empty_cart">Empty Cart</a>
-                </div>
-    
+                    <a href='./index.php?view_cart=1' class="view_cart"><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'><br>View Cart</a>
+                </div>    
             </nav>
+    
+            <div class='crumbs'></div>
     
 		</header>
         

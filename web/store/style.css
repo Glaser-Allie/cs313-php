@@ -1,9 +1,9 @@
-    @import url('https://fonts.googleapis.com/css?family=Montserrat|Shrikhand');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Shrikhand');
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
 * {
     margin: 0;
     padding: 0;
-    }
+}
 
 body {
     background-color: azure;
@@ -15,9 +15,8 @@ body {
 
 h1,
 h2,
-h5, 
-label
-{
+h5,
+label {
     font-family: 'Shrikhand', cursive;
 }
 
@@ -28,20 +27,22 @@ h1 {
 
 h2 {
     margin-bottom: 1em;
-    width: 100vw;
-    text-align: left;
+    width: 90vw;
+    font-size: 3em
 }
 
 h3 {
-  font-size: 2.75em;  
+    font-size: 2.75em;
 }
 
-h4, h5 {
+h4,
+h5 {
     font-size: 1.5em;
     line-height: .75em;
 }
+
 h5 {
-  color:darkmagenta;  
+    color: darkmagenta;
 }
 
 h4 a:link,
@@ -66,25 +67,47 @@ ul {
     justify-content: flex-start;
 }
 
-header{
+
+/* HEADER */
+
+header {
     width: 90vw;
     margin-top: 10vh;
+    align-self: center;
+    justify-content: space-between;
+    
 }
 
-.left{
-    background: yellow;
-    width: 40vw; 
-    justify-content: space-around;
+nav {
+    display: flex;
+    width: 90vw;
+    align-self: center;
+    margin-bottom: 5vh
 }
 
-.right{
-    background: green;
-    width: 40vw;
+.left {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
-
-.home_icon, .cart_icon{
+.home_icon {
     height: 10vh;
 }
+
+.right {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cart_icon {
+    height: 5vh;
+    margin-bottom: 1rem;
+}
+
+
+/* BASIC PAGE STYLES */
 
 .container {
     display: flex;
@@ -109,172 +132,196 @@ header{
 }
 
 .content {
-    width: 90vw;
+    width: 90%;
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
     justify-content: center;
     align-self: center;
+    padding: 0 5rem 10rem 5rem;
 }
-header {
-    background-color: pink;
-    align-content: center;
-    flex-flow: row;
+
+.crumbs {
+    width: 90vw;
+    height: 10vh;
+    text-align: left;
 }
+
+
+/* ALL ITEMS PAGE */
+
 .item_display {
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
     justify-content: space-around;
     text-align: center;
-    height: 30vh;
     width: 35vh;
     border-radius: 2em;
     background-color: azure;
-    margin: 3rem;
-    padding: .5rem;
+    margin: 0;
+    padding: 1rem;
 }
 
-.item_display img{
+.item_display img {
     height: 30vh;
+     filter: drop-shadow(2px 3px 2px lightgrey);
 }
 
 .item_description {
     font-size: .9rem;
     padding: 1.5rem;
 }
-.product_page{
-    background-color:azure; 
-    padding: 20rem;
+
+.item_price {
+    color: aqua;
+    align-self: center;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
 }
-.product_page img {
-    height: 50vh;
-    margin: 2em;
-}
+
+
+/* PRODUCT PAGE */
 
 .product_page {
     display: flex;
     flex-flow: row nowrap;
-    height: 40vh;
     width: 80vhw;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
 }
-
 
 .product-specs {
     display: flex;
     flex-flow: column nowrap;
+    width: 60vw;
 }
 
-.cart_header{
-  font-size: 1.25em;
+.product_page img {
+    height: 40vh;
+    margin: 2em;
+}
+
+
+/* CART PAGE */
+
+.cart_header {
+    font-size: 1.25em;
     line-height: 2em;
 }
 
-.shopping_cart{
-    display:flex;
-    flex-flow:column nowrap;
+.shopping_cart {
+    display: flex;
+    flex-flow: column nowrap;
     width: 60vw;
-    }
-.product_row{
+}
+
+.product_row {
     height: 4em;
-    display:flex;
-    flex-flow:row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
-.empty_cart{
+
+.empty_cart {
     width: 95vw;
     text-align: right;
 }
-.empty_cart a:link{
+
+.empty_cart a:link {
     font-size: .5em;
 }
 
-.cart_form{
+.cart_form {
     display: flex;
     flex-flow: column nowrap;
     text-align: left;
 }
-.name, .quantity,  .calc_price {
+
+.name,
+.price,
+.quantity,
+.calc_price {
     width: 10vw;
     text-align: left;
 }
-.total{
+
+.total {
     width: 40vw;
     line-height: 3em;
     text-align: right;
 }
-.checkout{
+
+
+/* CHECKOUT PAGE */
+
+.checkout {
     margin: 1em;
     font-size: 2em;
 }
 
-.checkout a:link{
-    color:coral;
+.checkout a:link {
+    color: coral;
 }
+
 input[type=text] {
-  height:2.5em;
-  border: 0;
-  width: calc(100% - .1em);
-  margin-left:.1em;
-  box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
-  -webkit-transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s;
+    height: 2.5em;
+    border: 0;
+    width: calc(100% - .1em);
+    margin-left: .1em;
+    box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
 }
+
 input[type=text]:focus {
-  outline: none;
-  box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
+    outline: none;
+    box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
 }
-.checkout_info{
+
+.checkout_info {
     width: 40vw;
     text-align: left;
     margin-bottom: 5vh;
 }
 
-.checkout_info p{
+.checkout_info p {
     font-family: 'Shrikhand', cursive;
     margin-top: 2em;
 }
 
-.checkout_info input[placeholder]{
-    
+.checkout_info input[placeholder] {
+
     font-size: 1em;
     padding-left: 1em;
 }
-.citystatezip{
-    display:flex;
+
+.citystatezip {
+    display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.citystatezip input[name=zip]{
-    width:20%;
-}
-.citystatezip input[name=city], input[name=state]{
-    width:39.5%;
-}
-.total{
-    width: 70%;
-    padding-right:5%;
+.citystatezip input[name=zip] {
+    width: 20%;
 }
 
-.final_total{
+.citystatezip input[name=city],
+input[name=state] {
+    width: 39.5%;
+}
+
+.total {
+    width: 70%;
+    padding-right: 5%;
+}
+
+.final_total {
     display: flex;
     align-items: center;
 }
 
-.quantity_input>input[type=text] {
+.quantity_input > input[type=text] {
     max-width: 5vw;
     text-align: right;
-}
-
-.price{
-    color:aqua;
-    align-self: center;
-    font-size: 2rem;
-    padding:0;
-    margin:0;
 }
