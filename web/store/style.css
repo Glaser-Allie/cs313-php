@@ -100,7 +100,9 @@ nav {
 .home_icon {
     height: 10vh;
 }
-.center {}
+.center {
+    width: 80vw;
+}
 .right {
     width: 20%;
     display: flex;
