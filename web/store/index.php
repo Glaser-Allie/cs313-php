@@ -116,7 +116,8 @@ else if(isset($_GET['view_cart'])) {
 		echo "<h5>Your cart is empty.<h5><br />";
 	}
 	else {
-		echo "<div class='cart_page'><form action='./index.php?view_cart=1' method='post' class='cart_form'>
+		echo "<div class='cart_page'>
+                <form action='./index.php?view_cart=1' method='post' class='cart_form'>
 				<ul class='cart_header'>
                     <li class='name'>Name</li>
 					<li class='price'>Price</li>
@@ -238,8 +239,8 @@ else {
 	// Loop to display all products
 	foreach($products as $id => $product) {
 		echo "<div class='item_display'>
-            <div>" . $product['image'] . "</div>
-            <div><h4><a href='./index.php?view_product=$id'>" . $product['name'] . "</h4></div></a>
+            <div><a href='./index.php?view_product=$id'>" . $product['image'] . "</div>
+            <div><h4>" . $product['name'] . "</h4></div></a>
             <div class='item_price'>$" . $product['price'] . "</div>
             
 		</div>";

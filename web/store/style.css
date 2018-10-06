@@ -200,7 +200,8 @@ nav {
 .product_specs {
     display: flex;
     flex-flow: column nowrap;
-    width: 40%;
+    width: 40vw;
+    align-items: center;
 }
 
 .product_page img {
@@ -209,9 +210,9 @@ nav {
 }
 
 .item_description {
+    display: flex;
+    width: 20vw;
     font-size: 1.5rem;
-    width: 20%;
-    
 }
 
 
