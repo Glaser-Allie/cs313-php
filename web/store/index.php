@@ -107,13 +107,16 @@ if(isset($_GET['view_product'])) {
 // View cart
 else if(isset($_GET['view_cart'])) {
 	
-	echo "<h2>Your Cart</h2>";
+	echo "<div class='empty'>
+        <a href='./index.php?empty_cart=1' class='empty_cart'>Empty Cart</a></div>
+        
+        <h2 class='cart'>Your Cart</h2>";
 	
 	if(empty($_SESSION['shopping_cart'])) {
 		echo "<h5>Your cart is empty.<h5><br />";
 	}
 	else {
-		echo "<form action='./index.php?view_cart=1' method='post' class='cart_form'>
+		echo "<div class='cart_page'><form action='./index.php?view_cart=1' method='post' class='cart_form'>
 				<ul class='cart_header'>
                     <li class='name'>Name</li>
 					<li class='price'>Price</li>
@@ -134,13 +137,11 @@ else if(isset($_GET['view_cart'])) {
 			echo "</ul>
 			
 			</form>
+            
 			<div class='checkout'>
 				<a href='./index.php?checkout=1'>Checkout</a>
 			</div>
-            <div class='empty'>
-                    <a href='./index.php?empty_cart=1' class='empty_cart'>Empty Cart</a>
-                </div>
-            ";
+            </div>";
 	}
 }
 // Checkout
