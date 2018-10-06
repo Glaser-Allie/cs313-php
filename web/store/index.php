@@ -241,7 +241,7 @@ else {
 		echo "<div class='item_display'>
             <div>" . $product['image'] . "</div>
             <div><h4><a href='./index.php?view_product=$id'>" . $product['name'] . "</h4></div></a>
-            <div class='price'>$" . $product['price'] . "</div>
+            <div class='item_price'>$" . $product['price'] . "</div>
             
 		</div>";
 	}

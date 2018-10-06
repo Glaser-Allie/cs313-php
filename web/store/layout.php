@@ -4,7 +4,7 @@ $header = <<<HTML
 <!doctype HTML public>
 <html>
 <head>
-	<title>Sno Gourment</title>
+	<title>Sno Gourmet</title>
 	<link rel='stylesheet' type='text/css' href='./style.css' />
 </head>
 <body>
