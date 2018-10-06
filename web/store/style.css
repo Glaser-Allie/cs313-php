@@ -8,7 +8,7 @@
 body {
     background-color: azure;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -34,7 +34,7 @@ h2 {
 
 h3 {
     font-size: 1.75em;
-    color: deeppink;
+    color: #eb1777;
 }
 
 h4,
@@ -44,7 +44,7 @@ h5 {
 }
 
 h5 {
-    color: magenta;
+    color: #eb1777;
 }
 
 h4 {
@@ -53,7 +53,7 @@ h4 {
 
 h4 a:link,
 a:visited {
-    color: deeppink;
+    color: #eb1777;
 }
 
 h4 a:hover {
@@ -62,7 +62,7 @@ h4 a:hover {
 
 a {
     text-decoration: none;
-    color: deeppink;
+    color: #eb1777;
 }
 
 ul {
@@ -153,8 +153,9 @@ nav {
 
 .crumbs {
     width: 90vw;
-    height: 10vh;
+  
     text-align: left;
+    margin-top: 10vh;
 }
 
 
@@ -195,6 +196,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 90vw;
+    height: 60vh;
 }
 
 .product_specs {
@@ -203,18 +205,18 @@ nav {
     width: 40vw;
     align-items: center;
 }
-
+.product_price {
+    margin: 1rem;
+    font-size: 1rem;
+    color: midnightblue;
+}
 .product_page img {
-    height: 60vh;
-    margin: 2em;
+    height: 50vh;
 }
 
 .item_description {
-    display: flex;
-    width: 20vw;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
-
 
 /* CART PAGE */
 
@@ -256,19 +258,35 @@ nav {
     display: flex;
     flex-flow: column nowrap;
 }
-
-.name,
-.price,
-.quantity,
-.calc_price {
-    width: 10vw;
+.price{width:10vw;}
+.flavor,
+.quantity
+{
+    width: 20vw;
     text-align: left;
+}
+.quantity button {
+    margin: .5rem;
+    font-size: .6rem;
+}
+.quantity input[type=text]{
+    width: 3vw;
+    text-align: center;
 }
 
 .total {
-    width: 40vw;
-    line-height: 3em;
-    text-align: right;
+    height: 15vh;
+    padding-left: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color:#eb1777;
+    font-size: 1.5rem;
+}
+.final_total{
+    justify-content: flex-end;
+    color: #eb1777;
+    font-size: 1.5rem;
 }
 
 .checkout {
@@ -277,13 +295,11 @@ nav {
 }
 
 .checkout a:link {
-    color: coral;
+    color: #eb1777;
 }
 
 
 /* CHECKOUT PAGE */
-
-
 
 input[type=text] {
     height: 2.5em;
@@ -294,12 +310,7 @@ input[type=text] {
     -webkit-transition: box-shadow 0.3s;
     transition: box-shadow 0.3s;
 }
-
-input[type=text]:focus {
-    outline: none;
-    box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
-}
-
+    
 .checkout_info {
     width: 40vw;
     text-align: left;
@@ -312,7 +323,6 @@ input[type=text]:focus {
 }
 
 .checkout_info input[placeholder] {
-
     font-size: 1em;
     padding-left: 1em;
 }
@@ -344,6 +354,42 @@ input[name=state] {
 }
 
 .quantity_input > input[type=text] {
-    max-width: 5vw;
-    text-align: right;
+    max-width: 40vw;
+    text-align: center;
+}
+
+/* BUTTONS */
+
+button {font-size: .rem; background:transparent;border-width:2px;border-style: solid;position:relative;margin:2em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+font-family:comfortaa;font-weight:bold}
+button:before, button:after {content:'';display:block;position:absolute;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
+button:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+button:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+button:hover:before, button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#fff}
+.pink {text-align:center;}
+
+button {color:#eb1777;border-color:#eb1777}
+button:before, button:after  {border-color:#eb1777}
+button:hover:before, button:hover:after {border-color:#eb1777;}
+button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
+
+.button_margin {margin: 5rem;}
+
+.how_many select {
+    border: none;
+    border-bottom: 1px solid #eb1777;
+    background: transparent;
+    font-size: 2rem;
+    color: midnightblue;
+}
+
+.how_many {
+    display: flex;
+    flex-flow: row;
+    width 25vw;
+}
+
+.how_many h3 {
+    font-size: 1rem;
 }

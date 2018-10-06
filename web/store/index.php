@@ -69,19 +69,21 @@ if(isset($_GET['view_product'])) {
 	if(isset($products[$product_id])) {
 		// Display breadcrumbs
 		echo "<div class='crumbs'>
-			<a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . 
-			$products[$product_id]['type'] . "</a></div>";
-		
+			<a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . $products[$product_id]['type'] . "</a></div>";
 		
 		// Display product
 		echo "<div class='product_page'>
             <div class='product_img'>" . $products[$product_id]['image'] . "</div><br />
 			<div class='product_specs'>
-                <h3>" . $products[$product_id]['name'] . "</h3><br />
+                <h3>" . $products[$product_id]['name'] . "</h3>
+        
                 <div class='item_description'>" . $products[$product_id]['description'] . "</div>
-                <div><h4>$" . $products[$product_id]['price'] . "
-			<div>
+                
+                <div class='product_price'><h4>$" . $products[$product_id]['price'] . "</h4></div>
+                
+			<div class='how_many'>
 				<form action='./index.php?view_product=$product_id' method='post'>
+                    <h3>How Many?</h3> 
 					<select name='quantity'>
 						<option value='1'>1</option>
 						<option value='2'>2</option>
@@ -89,12 +91,9 @@ if(isset($_GET['view_product'])) {
                         <option value='4'>4</option>
                         <option value='5'>5</option>
                         <option value='6'>6</option>
-                        <option value='7'>7</option>
-                        <option value='8'>8</option>
-                        <option value='9'>9</option>
-					</select>
+					</select></div>
 					<input type='hidden' name='product_id' value='$product_id' />
-					<button type='submit' name='add_to_cart' value='Add to cart'>Add to cart</button>
+					<div class='button-margin'><button type='submit' name='add_to_cart' value='Add to cart' class='pink'>Add to cart</button></div>
 				</form>
 			</div>
             </div>
@@ -119,20 +118,20 @@ else if(isset($_GET['view_cart'])) {
 		echo "<div class='cart_page'>
                 <form action='./index.php?view_cart=1' method='post' class='cart_form'>
 				<ul class='cart_header'>
-                    <li class='name'>Name</li>
+                    <li class='flavor'>Flavor</li>
 					<li class='price'>Price</li>
-					<li class='quantity'>Qty</li>
+					<li class='quantity'>Quantity</li>
 				</ul>";
 				foreach($_SESSION['shopping_cart'] as $id => $product) {
 					$product_id = $product['product_id'];
 					
 					echo "<ul>
-						<li class='name'><a href='./index.php?view_product=$id'>" . 
+						<li class='flavor'><a href='./index.php?view_product=$id'>" . 
 							$products[$product_id]['name'] . "</a></li>
 						<li class='price'>" . $products[$product_id]['price'] . "</li>
 						<li class='quantity'>
 							<input type='text' maxlength='5' class='quantity_input' name='quantity[$product_id]' value='" . $product['quantity'] . "' />
-                            <input type='submit' name='update_cart' value='Update' /></li>
+                            <button type='submit' name='update_cart' value='Update' />Update</button></li>
 					</ul>";
 				}
 			echo "</ul>
@@ -158,9 +157,10 @@ else if(isset($_GET['checkout'])) {
 	else {
 		echo "<form action='./index.php?checkout=1' method='post'>
 		<ul class='cart_header'>
-                    <li class='name'>Name</li>
+                    <li class='flavor'>Flavor</li>
 					<li class='price'>Price</li>
-					<li class='quantity'>Qty</li>
+					<li class='quantity'>Quantity</li>
+                    <li class='calc_price'>Total</li>
 				</ul>";
 				
 				$total_price = 0;
@@ -171,18 +171,19 @@ else if(isset($_GET['checkout'])) {
 					$total_price += $products[$product_id]['price'] * $product['quantity'];
 					echo "           
                     <ul>
-                    <li class='name'><a href='./index.php?view_product=$id'>" . 
+                    <li class='flavor'><a href='./index.php?view_product=$id'>" . 
 							$products[$product_id]['name'] . "</a></li>
                             <li class='price' >$" . $products[$product_id]['price'] . "</li> 
 						<li class='quantity'>" . $product['quantity'] . "</li>
 						<li class='calc_price'>$" . number_format(($products[$product_id]['price'] * $product['quantity']),2) . "</li>
                         </ul>
-                        <ul>
-			             <li class='total'>Total price:</li><li class='final_total'>$" . number_format($total_price,2) . "<li>
-                        </ul>
-                        ]";
-                    
-                    echo "<form action='./index.php?purchase_complete' method='post'>        
+                        
+                        ";}
+            echo "<ul class='total'>
+                    <li >Total price:</li><li class='final_total'>$" . number_format($total_price,2) . "<li>
+                </ul>";
+        
+            echo "<form action='./index.php?purchase_complete' method='post'>        
             
             <div class='checkout_info'>
             <p>Please enter your shipping information:</p>
@@ -212,7 +213,6 @@ else if(isset($_GET['checkout'])) {
             </div>";
                 }
 	}
-}
 // Purchase Complete
 else if(isset($_GET['purchase_complete'])) {
 	
@@ -224,7 +224,7 @@ else if(isset($_GET['purchase_complete'])) {
 	else {
 		echo "<form action='./index.php?order_summary' method='post'>
 		<ul class='cart_header'>
-                    <li class='name'>Name</li>
+                    <li class='flavor'>Flavor</li>
 					<li class='price'>Price</li>
 					<li class='quantity'>Qty</li>
 				</ul>";
