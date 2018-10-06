@@ -393,3 +393,8 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
 .how_many h3 {
     font-size: 1rem;
 }
+
+@media only screen and (max-width: 550px) {
+    header{width: 100vw;}
+    h1{font-size:6rem;}
+}
