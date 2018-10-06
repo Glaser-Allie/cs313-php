@@ -234,8 +234,6 @@ else if(isset($_GET['purchase_complete'])) {
 
 // View all products
 else {
-	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'><img src='./images/snocone_icon.svg' alt='SnoCone Icon Home Link' class='home_icon'></a>";
 	
 	echo "<h2>Icy Cool Treats!</h2>";
 
