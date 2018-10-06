@@ -6,7 +6,7 @@
     }
 
 body {
-    background-color: white;
+    background-color: azure;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -100,8 +100,8 @@ header {
     left: 0px;
     width: 100%;
     content: " ";
-    background: radial-gradient(circle at 50% 0%, cyan 29%, darkturquoise 6%, whitesmoke 35%);
-    background-color: whitesmoke;
+    background: radial-gradient(circle at 50% 0%, cyan 29%, darkturquoise 6%, azure 35%);
+    background-color: azure;
     background-size: 5em 10em;
     height: 5em;
     background-repeat: repeat-x;
@@ -122,18 +122,16 @@ header {
     align-content: center;
     justify-content: space-around;
     text-align: center;
-    height: 50vh;
+    height: 30vh;
     width: 35vh;
     border-radius: 2em;
     background-color: azure;
-    margin: 1em;
+    margin: 3rem;
     padding: .5rem;
 }
 
 .item_display img{
-    height: 20vh;
-    padding: 0;
-    margin:0;
+    height: 30vh;
 }
 
 .item_description {
@@ -142,6 +140,7 @@ header {
 }
 .product_page{
     background-color:azure; 
+    padding: 20rem;
 }
 .product_page img {
     height: 50vh;
@@ -193,7 +192,7 @@ header {
     flex-flow: column nowrap;
     text-align: left;
 }
-.name, .quantity, .price, .calc_price {
+.name, .quantity,  .calc_price {
     width: 10vw;
     text-align: left;
 }
@@ -210,9 +209,6 @@ header {
 .checkout a:link{
     color:coral;
 }
-
-
-
 input[type=text] {
   height:2.5em;
   border: 0;

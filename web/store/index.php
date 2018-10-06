@@ -235,16 +235,17 @@ else if(isset($_GET['purchase_complete'])) {
 // View all products
 else {
 	// Display site links
-	echo "<a href='./index.php' class='breadcrumb'>Store Home</a>";
+	echo "<a href='./index.php' class='breadcrumb'><img src='./images/snocone_icon.svg' alt='SnoCone Icon Home Link' class='home_icon'></a>";
 	
 	echo "<h2>Icy Cool Treats!</h2>";
 
 	// Loop to display all products
 	foreach($products as $id => $product) {
 		echo "<div class='item_display'>
-			<div><h4><a href='./index.php?view_product=$id'>" . $product['name'] . "</h4></div>
-            <div>" . $product['image'] . "</div></a>
-            <div class='price'>$" . $product['price'] . "</div>            
+            <div>" . $product['image'] . "</div>
+            <div><h4><a href='./index.php?view_product=$id'>" . $product['name'] . "</h4></div></a>
+            <div class='price'>$" . $product['price'] . "</div>
+            
 		</div>";
 	}
 }
