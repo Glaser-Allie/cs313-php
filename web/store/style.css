@@ -66,23 +66,24 @@ ul {
     justify-content: flex-start;
 }
 
-header {
+header{
     width: 90vw;
     margin-top: 10vh;
-    display: flex;
-    flex-flow: row wrap;
-    align-self: center;
-    text-align: right;
-}
-.view_cart{
-    width:100vw;
-    font-size: 2em;
 }
 
-.breadcrumb {
-    height: 5vh;
-    width: 90vw;
-    text-align: left;
+.left{
+    background: yellow;
+    width: 40vw; 
+    justify-content: space-around;
+}
+
+.right{
+    background: green;
+    width: 40vw;
+}
+
+.home_icon{
+    height: 10vh;
 }
 
 .container {
@@ -115,7 +116,11 @@ header {
     justify-content: center;
     align-self: center;
 }
-
+header {
+    background-color: pink;
+    align-content: center;
+    flex-flow: row;
+}
 .item_display {
     display: flex;
     flex-flow: column nowrap;
