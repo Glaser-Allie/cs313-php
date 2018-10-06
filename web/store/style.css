@@ -82,7 +82,7 @@ header{
     width: 40vw;
 }
 
-.home_icon{
+.home_icon, .cart_icon{
     height: 10vh;
 }
 
