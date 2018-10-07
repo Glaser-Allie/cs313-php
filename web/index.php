@@ -17,7 +17,7 @@ if(isset($_GET['assignments'])) {
                 <ul>
                     <li>Week 3</li>
                     <li><a href='/team/wk3'>Team Activity</a></li>
-                    <li><a href='/store'>Ponder: Store</a></li>
+                    <li><a href='./store'>Ponder: Store</a></li>
                 </ul>
                 <ul>
                     <li>Week 4</a></li>
