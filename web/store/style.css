@@ -10,7 +10,8 @@ body {
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; 
+    color: midnightblue;
 }
 
 h1,
@@ -456,8 +457,38 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         padding: 0;
     }
     .product_page {
-        display: flex;{
+        display: flex;
         flex-flow: column;
         justify-content: flex-start;
-    }    
+        height: auto;
+    }  
+    .product_page img {
+        height: 30vh;
+    }
+    .product_specs {
+        width:70vw;
+    }
+    .item_description {
+        margin-top: 1rem;
+        color: midnightblue;
+    }
+    .how_many {
+        width 25vw;
+        margin-top:1rem;
+    }
+    .how_many h3 {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 1.4rem;
+        margin: 2rem 0 0 0;
+    }
+    .cart_form {
+    width: 60vw;
+    }
+    .cart_form li {width: 20;}
+    .cart_form li:nth-child(3) {display: flex;}
+    .cart_form button {font-size: .8rem}
+    .quantity_input {font-size: 1.3rem;
+    margin-right: 5vw;}
 }
