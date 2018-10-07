@@ -561,5 +561,17 @@ button:hover {
         margin-left: .25rem;
         padding: 0;
     }
+    .product_page {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .product_page img {
+        height: 30vh;
+    }
+    .product_specs {
+        width: 70vw;
+    }
     
 }
