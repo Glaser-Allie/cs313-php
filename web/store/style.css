@@ -230,6 +230,16 @@ nav {
     font-size: 1.3rem;
 }
 
+.how_many {
+    display: flex;
+    flex-flow: row;
+    width: 25vw;
+}
+
+.how_many h3 {
+    font-size: 1rem;
+}
+
 /* CART PAGE */
 
 .cart {
@@ -377,6 +387,63 @@ input[name=state] {
     text-align: center;
 }
 
+/* PURCHASE COMPLETE RECEIPT*/
+
+.receipt {
+    width: 50vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /*background-color: magenta;*/
+}
+
+.receipt img {
+    height: 15vh;
+}
+
+.confirm {
+    color: midnightblue;
+    font-size: 1.2em;
+    margin: 1rem 2rem;
+}
+
+.summary {
+    justify-content: center;
+    align-items: center;
+   /* background-color: lawngreen;*/
+    width: 100vw;
+    margin-top: 1rem;
+}
+
+.receipt ul {
+    width: 30vw;
+}
+
+.summary li:nth-child(2) {
+    padding-left: 1rem;
+    width: 60%;
+    text-align: left;
+}
+
+.summary li:nth-child(3) {
+    padding-right: 1rem;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+
+.final_total {
+    /*background-color: yellow;*/
+    justify-content: center;
+    font-size: 1.5rem;
+    color: seagreen;
+    font-weight: 700;
+}
+
+
+
+
 /* BUTTONS */
 
 button {
@@ -463,60 +530,6 @@ button:hover {
     color: midnightblue;
 }
 
-.how_many {
-    display: flex;
-    flex-flow: row;
-    width: 25vw;
-}
-
-.how_many h3 {
-    font-size: 1rem;
-}
-
-.receipt {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.summary {
-    display: flex;
-    flex-flow: row;
-    width: 30vw;
-    align-items: center;
-    margin: 2rem;
-}
-
-.receipt ul {
-    margin-bottom: 0;
-}
-
-.summary {
-    justify-content: flex-start;
-    text-align: left;
-}
-
-.summary li:nth-child(2) {
-    padding-left: 1rem;
-    width: 50%;
-}
-
-.summary li:nth-child(3) {
-    padding-right: 1rem;
-    justify-content: flex-end;
-    font-size: 2em;
-}
-
-.confirm {
-    color: midnightblue;
-    font-size: 1.2em;
-    margin: 1rem;
-}
-
-.summary img {
-    height: 15vh;
-}
-
 @media only screen and (max-width: 950px) {
     h1 {
         font-size: 3rem;
@@ -530,12 +543,6 @@ button:hover {
     .cart_icon {
         font-size: 1rem;
     }
-    .summary {
-        width: 50vw;
-    }
-    .summary li:nth-child(3) {
-        font-size: 1.2em;
-    }
     .checkout_page {
         width: 90vw;
         display: flex;
@@ -547,20 +554,25 @@ button:hover {
     .checkout_info {
         width: 75vw;
     }
+    
+    /* PURCHASE COMPLETE RECEIPT MAX 950px*/
+    .receipt {
+        width: 70vw;
+    }
+    .receipt img {
+        height: 20vh;
+    }
+    .receipt ul {
+        width: 50vw;
+    }
+    
 }
 
 @media only screen and (max-width: 550px) {
     h1 {
         font-size: 2rem;
     }
-    .summary {
-        width: 80vw;
-    }
-    .summary li:nth-child(3) {
-        font-size: 1em;
-        margin-left: .25rem;
-        padding: 0;
-    }
+   
     .product_page {
         display: flex;
         flex-flow: column;
@@ -683,7 +695,6 @@ button:hover {
 
 
     /*    CHECKOUT PAGE     */
-    
     .checkout_page h2 {
         margin: 2rem 0 1rem 0;
     }
@@ -694,5 +705,24 @@ button:hover {
         color: seagreen;
         font-size: 1rem;
         margin: 2rem 0 1rem 0;
+    }
+    
+    /* PURCHASE COMPLETE RECEIPT MAX 550px*/
+    
+    .receipt {
+        width: 90vw;
+    }
+    .receipt img {
+        height: 15vh;
+    }
+    .receipt ul {
+        width: 80vw;
+    }
+    .summary li:nth-child(3) {
+        font-size: 1em;
+        padding: 0;
+    }
+    .summary {
+        width: 80vw;
     }
 }

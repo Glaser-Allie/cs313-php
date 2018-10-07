@@ -228,7 +228,7 @@ else if(isset($_GET['purchase_complete'])) {
     echo "<h2>Purchase Complete</h2>";
     
     echo "<div class='receipt'>
-            <h5>Thank you for your purchase, " . $_POST ["name"]."!</h5>
+            <h5>Thank you for your purchase, " . $_POST ["name"]."!</h5><br>
             <div class='confirm'>If we need to contact you, we'll email: <br>" . $_POST ["email"] . "</div>
             
             <div class='confirm'>And, we'll deliver your SnoGourmet order to: <br>" . $_POST ["address"] . ", " . $_POST ["city"] . ",  " . $_POST ["state"] . "  " . $_POST ["zip"] . "</div>";
@@ -252,7 +252,7 @@ else if(isset($_GET['purchase_complete'])) {
                 </form>";
                 }
     
-            echo "<ul class='final_total'>
+            echo "<br><ul class='final_total'>
                     <li >Total price: $" . number_format($total_price,2) . "<li>
                 </ul></div>";  
 }
