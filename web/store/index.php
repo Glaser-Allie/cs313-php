@@ -56,9 +56,52 @@ if(isset($_POST['update_cart'])) {
 	}
 }
 
-
 // **DISPLAY PAGE**
 echo $header;
+
+// View a product
+if(isset($_GET['view_product'])) {
+	$product_id = $_GET['view_product'];
+	
+	if(isset($products[$product_id])) {
+		// Display breadcrumbs
+		echo "<div class='crumbs'>
+			<a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . $products[$product_id]['type'] . "</a></div>";
+        
+        echo $message;
+		
+		// Display product
+		echo "<div class='product_page'>
+            <div class='product_img'>" . $products[$product_id]['image'] . "</div><br />
+			<div class='product_specs'>
+                <h3>" . $products[$product_id]['name'] . "</h3>
+        
+                <div class='item_description'>" . $products[$product_id]['description'] . "</div>
+                
+                <div class='product_price'><h4>$" . $products[$product_id]['price'] . "</h4></div>
+                
+			<div class='how_many'>
+				<form action='./index.php?view_product=$product_id' method='post'>
+                    <h3>How Many?</h3> 
+					<select name='quantity'>
+						<option value='1'>1</option>
+						<option value='2'>2</option>
+						<option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+					</select></div>
+					<input type='hidden' name='product_id' value='$product_id' />
+					<div class='button-margin'><button type='submit' name='add_to_cart' class='pink'>Add to cart</button></div>
+				</form>
+			</div>
+            </div>
+		</div>";
+	}
+	else {
+		echo "Invalid product!";
+	}
+}
 
 // View all products
 //else {
