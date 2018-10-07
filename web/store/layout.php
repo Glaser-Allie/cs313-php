@@ -7,6 +7,7 @@ $header = <<<HTML
 	<title>SnoGourmet</title>
 	<link rel='stylesheet' type='text/css' href='./style.css' />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
 </head>
 <body>
 	<div class="container" >
