@@ -66,7 +66,8 @@ if(isset($_GET['view_product'])) {
 	if(isset($products[$product_id])) {
 		// Display breadcrumbs
 		echo "<div class='crumbs'>
-			<a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . $products[$product_id]['type'] . "</a></div>";
+			<div class='phone_crumbs'><a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . $products[$product_id]['type'] . "</a> </div>
+            <a href='./index.php?view_cart=1' class='view_cart phone_cart'><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'></a></div>";
         
         echo $message;
 		

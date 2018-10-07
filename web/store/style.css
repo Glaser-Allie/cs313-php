@@ -157,12 +157,10 @@ nav {
 }
 
 .crumbs {
+    display: flex;
     width: 90vw;
-  
-    text-align: left;
-    margin-top: 10vh;
+    z-index: 999;
 }
-
 
 /* ALL ITEMS PAGE */
 
@@ -444,4 +442,105 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
     .summary {width: 50vw;}
     .summary li:nth-child(3){font-size: 1.2em;
     }
+}
+
+
+@media only screen and (max-width: 550px) {
+    h1{
+        font-size:2rem;
+    }
+    .summary {
+        width: 80vw;
+    }
+    .summary li:nth-child(3){
+        font-size: 1em;
+        margin-left:.25rem; 
+        padding: 0;
+    }
+    .product_page {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        height: auto;
+    }  
+    .product_page img {
+        height: 30vh;
+    }
+    .product_specs {
+        width:70vw;
+    }
+    .item_description {
+        margin-top: 1rem;
+        color: midnightblue;
+        font-size: 1em;
+    }
+    .how_many {
+        width 25vw;
+        margin-top:1rem;
+    }
+    .how_many h3 {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 1.4rem;
+        margin: 2rem 0 0 0;
+    }
+    .cart_form {
+        width: 60vw;
+    }
+    .cart_form li {width: 20;}
+    .cart_form li:nth-child(3) {display: flex;}
+    .cart_form button {font-size: .8rem;}
+    .quantity_input {
+        font-size: 1.3rem;
+        margin-right: 5vw;
+    }
+    nav {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    nav .left {
+        width: 15vw;
+        justify-content: center;
+    }
+    nav .right {
+        /*width: 90vw;
+        margin: 1vh 0 0 0;*/
+        display: none;
+    }
+     nav .center {
+        width: 80vw;
+        justify-content: center; 
+         font-size: 2rem;
+    }
+   .right span {
+        display: none; 
+    }
+    .center h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container::after {
+    bottom: -50px;
+    background-size: 2em 4em;
+    height: 5em;
+    }
+    .crumbs { 
+        margin-top: 1vh;
+        z-index: 999;   
+    }
+    .crumbs a{
+       text-align: center;
+    }
+    .phone_cart{
+        width: 45vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+.phone_crumbs {
+    width: 45vw;
+    display: flex;
+    justify-content: flex-start;
+    }
+
 }

@@ -16,7 +16,7 @@ $header = <<<HTML
                 </div>
                 <div class='center'><a href='./index.php'><h1>SnoGourmet</h1></a></div>
                 <div class='right'>
-                    <a href='./index.php?view_cart=1' class="view_cart"><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'><br>View Cart</a>
+                    <a href='./index.php?view_cart=1' class="view_cart"><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'><br><span>View Cart</span></a>
                 </div>    
             </nav>
 		</header>
