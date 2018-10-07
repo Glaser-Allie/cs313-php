@@ -447,7 +447,9 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
 }
 
 @media only screen and (max-width: 550px) {
-    h1{font-size:2rem;}
+    h1{
+        font-size:2rem;
+    }
     .summary {
         width: 80vw;
     }
@@ -484,11 +486,13 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         margin: 2rem 0 0 0;
     }
     .cart_form {
-    width: 60vw;
+        width: 60vw;
     }
     .cart_form li {width: 20;}
     .cart_form li:nth-child(3) {display: flex;}
-    .cart_form button {font-size: .8rem}
-    .quantity_input {font-size: 1.3rem;
-    margin-right: 5vw;}
+    .cart_form button {font-size: .8rem;}
+    .quantity_input {
+        font-size: 1.3rem;
+        margin-right: 5vw;
+    }
 }
