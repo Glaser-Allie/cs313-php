@@ -66,7 +66,7 @@ if(isset($_GET['view_product'])) {
 	if(isset($products[$product_id])) {
 		// Display breadcrumbs
 		echo "<div class='crumbs'>
-			<div class='phone_crumbs'><a href='./index.php'>Home </a> &gt;  <a href='./index.php'>" . $products[$product_id]['type'] . "</a> </div>
+			<div class='phone_crumbs'><a href='./index.php'>Home</a> &nbsp;&gt;&nbsp;  <a href='./index.php'>" . $products[$product_id]['type'] . "</a> </div>
             <a href='./index.php?view_cart=1' class='phone_cart_home'><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'></a></div>";
         
 		
@@ -162,7 +162,7 @@ else if(isset($_GET['checkout'])) {
 		echo "Your cart is empty.<br />";
 	}
 	else {
-		echo "<form action='./index.php?checkout=1' method='post'>
+		echo "<div class='checkout_page'><form action='./index.php?checkout=1' method='post'>
 		<ul class='cart_header'>
                     <li class='flavor'>Flavor</li>
 					<li class='price'>Price</li>
@@ -183,17 +183,17 @@ else if(isset($_GET['checkout'])) {
                             <li class='price' >$" . $products[$product_id]['price'] . "</li> 
 						<li class='quantity'>" . $product['quantity'] . "</li>
 						<li class='calc_price'>$" . number_format(($products[$product_id]['price'] * $product['quantity']),2) . "</li>
-                        </ul></form>              
-                        ";}
+                        </ul></form>";
+                }
             echo "<ul class='total'>
                     <li >Total price:</li><li class='final_total'>$" . number_format($total_price,2) . "<li>
                 </ul>";       
            
             
-            echo "<form action='./index.php?purchase_complete=1' method='post'>   <form action='./index.php?purchase_complete=1' method='post'>    
+            echo "<form action='./index.php?purchase_complete=1' method='post'>   
             
             <div class='checkout_info'>
-            <p>Please enter your shipping information:</p>
+            <h4>Please enter your shipping information:</h4>
 			<label>&nbsp;</label>
             <input type='text' placeholder='Name' name='name'>
 			<br/>
@@ -208,13 +208,13 @@ else if(isset($_GET['checkout'])) {
            
             <label>&nbsp;</label>
             <div class='citystatezip'>
-            <input type='text' placeholder='City' name='city'>\n\n 
-            <input type='text' placeholder='State' name='state' maxlength='2'>\n\n\n\n
+            <input type='text' placeholder='City' name='city'> 
+            <input type='text' placeholder='State' name='state' maxlength='25'>
             <input type='text' placeholder='Zip' name='zip' maxlength='5'>
             </div>
             </div>
             
-            <button type='submit' name='purchase_complete' class='pink'>Complete Purchase</button></form>   
+            <button type='submit' name='purchase_complete' class='pink'>Complete Purchase</button></form></div>   
             ";
         }
 	}

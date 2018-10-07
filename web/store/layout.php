@@ -21,14 +21,10 @@ $header = <<<HTML
             </nav>
 		</header>
     </div>
-		
-        
-        
-		<div class='content'>
+    <div class='content'>
 HTML;
 
 $footer = <<<HTML
-		
         
         </div><!-- End content-->
 	</div><!-- End container-->

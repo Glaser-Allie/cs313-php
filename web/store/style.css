@@ -17,7 +17,7 @@ h1,
 h2,
 h5,
 label {
-    ont-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 h1 {
@@ -90,7 +90,7 @@ nav {
     display: flex;
     width: 100vw;
     align-self: center;
-    margin-bottom: vh;
+    margin-bottom: 1vh;
 }
 
 .left {
@@ -365,7 +365,7 @@ input[name=state] {
 
 /* BUTTONS */
 
-button {font-size: .rem; background:transparent;border-width:2px;border-style: solid;position:relative;margin:2em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+button {font-size: 1rem; background:transparent;border-width:2px;border-style: solid;position:relative;margin:2em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
 font-family:comfortaa;font-weight:bold}
 button:before, button:after {content:'';display:block;position:absolute;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
 button:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
@@ -392,7 +392,7 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
 .how_many {
     display: flex;
     flex-flow: row;
-    width 25vw;
+    width: 25vw;
 }
 
 .how_many h3 {
@@ -437,15 +437,36 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
 .summary img {
     height: 15vh;
 }
+
 @media only screen and (max-width: 950px) {
-    h1{font-size:3rem;}
-    header{margin-top: 2vh;}
-    .cart_icon {font-size:1rem;}
-    .summary {width: 50vw;}
-    .summary li:nth-child(3){font-size: 1.2em;
+    h1{
+        font-size:3rem;
+    }
+    h4 {line-height: 1.25}
+    header{
+        margin-top: 2vh;
+    }
+    .cart_icon {
+        font-size:1rem;
+    }
+    .summary {
+        width: 50vw;
+    }
+    .summary li:nth-child(3){
+        font-size: 1.2em;
+    }
+    .checkout_page {
+        width: 90vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: cornflowerblue;
+    }
+    .checkout_info {
+        width: 75vw
     }
 }
-
 
 @media only screen and (max-width: 550px) {
     h1{
@@ -477,7 +498,7 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         font-size: 1em;
     }
     .how_many {
-        width 25vw;
+        width: 25vw;
         margin-top:1rem;
     }
     .how_many h3 {
@@ -487,12 +508,7 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         font-size: 1.4rem;
         margin: 1rem 0 0 0;
     }
-    .cart_form {
-        width: 60vw;
-    }
-    .cart_form li {width: 20;}
-    .cart_form li:nth-child(3) {display: flex;}
-    .cart_form button {font-size: .8rem;}
+   
     .quantity_input {
         font-size: 1.3rem;
         margin-right: 5vw;
@@ -534,28 +550,27 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
        text-align: center;
     }
     .phone_cart{
-        width: 45vw;
         display: flex;
         justify-content: flex-end;
     }
-.   phone_crumbs{
+    .phone_crumbs{
         width: 3vw;
         display: flex;
         justify-content: flex-start;
     }
     .phone_cart_home{
-        width:50vw;
+        width:90vw;
         display: flex;
         justify-content: flex-end;
     }
     h2 {margin: 1vh 0;
     }
-    .checkout {
-        font-size: 1.5rem;
-        margin-top: 3rem;
-    }
+    
+    //Checkout Page
+    
+    //Cart Page
     .cart_form{
-        width: 90vw; 
+        width: 80vw; 
         display: flex; 
         align-items: center;
        /*background-color: green;*/
@@ -565,11 +580,16 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         font-size: 90%;
         /*background-color: pink;*/
     }
-    
     .cart_form li {
         width: 25vw; 
         text-align: left;
         /*background-color: blue;*/
+    }
+    .cart_form li:nth-child(3) {
+        display: flex;
+    }
+    .cart_form button {
+        font-size: .8rem;
     }
     .flavor{
         width: 20vw;
@@ -578,6 +598,19 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         font-size: .75rem;
         padding: 0 .5rem;
         height: 4vh;
+    }
+    .checkout {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    input[name=zip], input[name=state]  {
+        width: 50%;
+    }
+
+    input[name=city],
+    {
+        width: 100%;    
     }
     
 }
