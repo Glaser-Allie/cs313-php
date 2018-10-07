@@ -573,5 +573,126 @@ button:hover {
     .product_specs {
         width: 70vw;
     }
+    .item_description {
+        margin-top: 1rem;
+        color: midnightblue;
+        font-size: 1em;
+    }
+    .how_many {
+        width: 25vw;
+        margin-top: 1rem;
+    }
+    .how_many h3 {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 1.4rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .quantity_input {
+        font-size: 1.3rem;
+        margin-right: 5vw;
+    }
+    nav {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    nav .left {
+        width: 15vw;
+        justify-content: center;
+    }
+    nav .right {
+        /*width: 90vw;
+        margin: 1vh 0 0 0;*/
+        display: none;
+    }
+    nav .center {
+        width: 80vw;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .right span {
+        display: none;
+    }
+    .center h1 {
+        font-size: 2.5rem;
+    }
+    .container::after {
+        bottom: -50px;
+        background-size: 2em 4em;
+        height: 5em;
+    }
+    .crumbs {
+        margin-top: 2vh;
+        z-index: 999;
+    }
+    .crumbs a {
+        text-align: center;
+    }
+    .phone_cart {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .phone_crumbs {
+        width: 3vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .phone_cart_home {
+        width: 90vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*     CART PAGE     */
+    .cart_form {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        /*background-color: green;*/
+    }
+    .cart_form ul {
+        width: 75vw;
+        font-size: 90%;
+        /*background-color: pink;*/
+    }
+    .cart_form li {
+        width: 25vw;
+        text-align: left;
+        /*background-color: blue;*/
+    }
+    .cart_form li:nth-child(3) {
+        display: flex;
+    }
+    .cart_form button {
+        font-size: .8rem;
+    }
+    .flavor {
+        width: 20vw;
+    }
+    .quantity button {
+        font-size: .75rem;
+        padding: 0 .5rem;
+        height: 4vh;
+    }
+    .checkout {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+
+    /*    CHECKOUT PAGE     */
     
+    .checkout_page h2 {
+        margin: 2rem 0 1rem 0;
+    }
+    .calc_price ul {
+        width: 10vw;
+    }
+    .checkout_page .cart_header li {
+        color: seagreen;
+        font-size: 1rem;
+        margin: 2rem 0 1rem 0;
+    }
 }
