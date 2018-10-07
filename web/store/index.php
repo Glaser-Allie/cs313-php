@@ -102,9 +102,128 @@ if(isset($_GET['view_product'])) {
 		echo "Invalid product!";
 	}
 }
+// View cart
+else if(isset($_GET['view_cart'])) {
+	
+	echo "<div class='empty'>
+        <a href='./index.php?empty_cart=1' class='empty_cart'>Empty Cart</a></div>";
+    
+    echo $message;
+
+        echo"<h2 class='cart'>Your Cart</h2>";
+	
+	if(empty($_SESSION['shopping_cart'])) {
+		echo "<h5>Your cart is empty.<h5><br />";
+	}
+	else {
+		echo "<div class='cart_page'>
+                <form action='./index.php?view_cart=1' method='post' class='cart_form'>
+				<ul class='cart_header'>
+                    <li class='flavor'>Flavor</li>
+					<li class='price'>Price</li>
+					<li class='quantity'>Quantity</li>
+				</ul>";
+				foreach($_SESSION['shopping_cart'] as $id => $product) {
+					$product_id = $product['product_id'];
+					
+					echo "<ul>
+						<li class='flavor'><a href='./index.php?view_product=$id'>" . 
+							$products[$product_id]['name'] . "</a></li>
+						<li class='price'>" . $products[$product_id]['price'] . "</li>
+						<li class='quantity'>
+							<input type='text' maxlength='5' class='quantity_input' name='quantity[$product_id]' value='" . $product['quantity'] . "' />
+                            <button type='submit' name='update_cart' value='Update'>Update</button></li>
+					</ul>";
+				}
+			echo "</ul>
+			
+			</form>
+            
+			<div class='checkout'>
+				<a href='./index.php?checkout=1'>Checkout</a>
+			</div>
+            </div>";
+    }
+}
+
+// Checkout
+else if(isset($_GET['checkout'])) {
+	// Display breadcrumbs
+	echo "<a href='./index.php?view_cart=1' class='crumbs'>Back to Cart</a>";
+	
+	echo "<h2>Checkout</h2>";
+	
+	if(empty($_SESSION['shopping_cart'])) {
+		echo "Your cart is empty.<br />";
+	}
+	else {
+		echo "<form action='./index.php?checkout=1' method='post'>
+		<ul class='cart_header'>
+                    <li class='flavor'>Flavor</li>
+					<li class='price'>Price</li>
+					<li class='quantity'>Quantity</li>
+                    <li class='calc_price'>Total</li>
+				</ul>";
+				
+				$total_price = 0;
+				foreach($_SESSION['shopping_cart'] as $id => $product) {
+					$product_id = $product['product_id'];
+					
+					
+					$total_price += $products[$product_id]['price'] * $product['quantity'];
+					echo "           
+                    <ul>
+                    <li class='flavor'><a href='./index.php?view_product=$id'>" . 
+							$products[$product_id]['name'] . "</a></li>
+                            <li class='price' >$" . $products[$product_id]['price'] . "</li> 
+						<li class='quantity'>" . $product['quantity'] . "</li>
+						<li class='calc_price'>$" . number_format(($products[$product_id]['price'] * $product['quantity']),2) . "</li>
+                        </ul></form>              
+                        ";}
+            echo "<ul class='total'>
+                    <li >Total price:</li><li class='final_total'>$" . number_format($total_price,2) . "<li>
+                </ul>";       
+           
+            
+            echo "<form action='./index.php?purchase_complete=1' method='post'>   <form action='./index.php?purchase_complete=1' method='post'>    
+            
+            <div class='checkout_info'>
+            <p>Please enter your shipping information:</p>
+			<label>&nbsp;</label>
+            <input type='text' placeholder='Name' name='name'>
+			<br/>
+            
+			<label>&nbsp;</label>
+            <input type='text' placeholder='Email Address' name='email'>
+			<br/>
+           
+			<label>&nbsp;</label>
+            <input type='text' placeholder='Street Address' name='address'>
+			<br/>
+           
+            <label>&nbsp;</label>
+            <div class='citystatezip'>
+            <input type='text' placeholder='City' name='city'>\n\n 
+            <input type='text' placeholder='State' name='state' maxlength='2'>\n\n\n\n
+            <input type='text' placeholder='Zip' name='zip' maxlength='5'>
+            </div>
+            </div>
+            
+            <button type='submit' name='purchase_complete' class='pink'>Complete Purchase</button></form>   
+            ";
+        }
+	}
+
+// Purchase Complete
+else if(isset($_GET['purchase_complete'])) {
+    
+    // Display breadcrumbs
+	echo "<a href='./index.php?view_cart=1' class='crumbs'>Back to Cart</a>";
+}
+	
 
 // View all products
-//else {
+else {
 	
 	echo "<h2>Icy Cool Treats!</h2>";
 
@@ -115,7 +234,7 @@ if(isset($_GET['view_product'])) {
                     <div class='item_price'>$" . $product['price'] . "</div>
 		      </div>";
 	}
-//}
+}
 
 echo $footer;
 
