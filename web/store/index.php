@@ -228,7 +228,7 @@ else if(isset($_GET['purchase_complete'])) {
             
             <div class='confirm'>And, we'll deliver your SnoGourmet order to: <br>" . $_POST ["address"] . ", " . $_POST ["city"] . ",  " . $_POST ["state"] . "  " . $_POST ["zip"] . "</div>";
     
-    echo "<div><form action='./index.php?checkout=1' method='post'>";
+    echo "<form action='./index.php?checkout=1' method='post'>";
 				
 				$total_price = 0;
 				foreach($_SESSION['shopping_cart'] as $id => $product) {
@@ -244,7 +244,7 @@ else if(isset($_GET['purchase_complete'])) {
                         </li>
                         <li> $" .  number_format(($products[$product_id]['price'] * $product['quantity']),2) ."</li>
                     </ul>
-                </form></div>";
+                </form>";
                 }
     
             echo "<ul class='total'>
