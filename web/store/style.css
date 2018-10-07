@@ -455,7 +455,9 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         margin-left:.25rem; 
         padding: 0;
     }
-    .product_page{flex-flow: column;
+    .product_page {
+        display: flex;{
+        flex-flow: column;
         justify-content: flex-start;
-    }
+    }    
 }
