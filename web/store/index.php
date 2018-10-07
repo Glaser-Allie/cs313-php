@@ -66,10 +66,9 @@ if(isset($_GET['view_product'])) {
 	if(isset($products[$product_id])) {
 		// Display breadcrumbs
 		echo "<div class='crumbs'>
-			<div class='phone_crumbs'><a href='./index.php'>Home</a> &gt; <a href='./index.php'>" . $products[$product_id]['type'] . "</a> </div>
-            <a href='./index.php?view_cart=1' class='view_cart phone_cart'><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'></a></div>";
+			<div class='phone_crumbs'><a href='./index.php'>Home </a> &gt;  <a href='./index.php'>" . $products[$product_id]['type'] . "</a> </div>
+            <a href='./index.php?view_cart=1' class='phone_cart_home'><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'></a></div>";
         
-        echo $message;
 		
 		// Display product
 		echo "<div class='product_page'>
@@ -92,8 +91,10 @@ if(isset($_GET['view_product'])) {
                         <option value='5'>5</option>
                         <option value='6'>6</option>
 					</select></div>
-					<input type='hidden' name='product_id' value='$product_id' />
-					<div class='button-margin'><button type='submit' name='add_to_cart' class='pink'>Add to cart</button></div>
+					<input type='hidden' name='product_id' value='$product_id' /><br>";
+        echo $message;
+        
+		echo "<button type='submit' name='add_to_cart' class='pink'>Add to cart</button></div>
 				</form>
 			</div>
             </div>
@@ -105,9 +106,12 @@ if(isset($_GET['view_product'])) {
 }
 // View cart
 else if(isset($_GET['view_cart'])) {
-	
-	echo "<div class='empty'>
-        <a href='./index.php?empty_cart=1' class='empty_cart'>Empty Cart</a></div>";
+    
+    // Display breadcrumbs
+		echo "<div class='crumbs'>
+			<div class='phone_crumbs'>
+        <a href='./index.php?empty_cart=1' class='empty_cart'>Empty Cart</a></div>
+            <a href='./index.php?view_cart=1' class='phone_cart_home'><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'></a></div>";
     
     echo $message;
 
@@ -255,6 +259,10 @@ else if(isset($_GET['purchase_complete'])) {
 
 // View all products
 else {
+    
+    //Display Cart in breadcrumbs
+    echo "<div class='crumbs'>
+            <a href='./index.php?view_cart=1' class='phone_cart_home'><img src='./images/cart_icon.svg' alt='Cart Icon Link' class='cart_icon'></a></div>";
 	
 	echo "<h2>Icy Cool Treats!</h2>";
 

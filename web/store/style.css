@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Shrikhand');
 @import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
 * {
     margin: 0;
@@ -18,14 +17,13 @@ h1,
 h2,
 h5,
 label {
-    font-family: 'Shrikhand', cursive;
+    ont-family: 'Comfortaa', sans-serif;
 }
 
 h1 {
     font-size: 7em;
     color: white;
     width: 80vw;
-    
 }
 
 h2 {
@@ -47,7 +45,7 @@ h5 {
 }
 
 h5 {
-    color: #eb1777;
+    color: seagreen;
 }
 
 h4 {
@@ -55,7 +53,7 @@ h4 {
 }
 
 h4 a:link,
-a:visited {
+    a:visited {
     color: #eb1777;
 }
 
@@ -92,7 +90,7 @@ nav {
     display: flex;
     width: 100vw;
     align-self: center;
-    margin-bottom: 5vh;
+    margin-bottom: vh;
 }
 
 .left {
@@ -103,7 +101,7 @@ nav {
     margin-left: 2vw;
 }
 .home_icon {
-    height: 10vh;
+    height: 12vh;
 }
 .center {
     width: 70vw;
@@ -160,6 +158,10 @@ nav {
     display: flex;
     width: 90vw;
     z-index: 999;
+    margin-top: 8vh;
+}
+.phone_cart_home {
+    display: none;
 }
 
 /* ALL ITEMS PAGE */
@@ -483,7 +485,7 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
     }
     button {
         font-size: 1.4rem;
-        margin: 2rem 0 0 0;
+        margin: 1rem 0 0 0;
     }
     .cart_form {
         width: 60vw;
@@ -519,14 +521,13 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
     .center h1 {
         font-size: 2.5rem;
     }
-    
     .container::after {
     bottom: -50px;
     background-size: 2em 4em;
     height: 5em;
     }
     .crumbs { 
-        margin-top: 1vh;
+        margin-top: 2vh;
         z-index: 999;   
     }
     .crumbs a{
@@ -537,10 +538,46 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
         display: flex;
         justify-content: flex-end;
     }
-.phone_crumbs {
-    width: 45vw;
-    display: flex;
-    justify-content: flex-start;
+.   phone_crumbs{
+        width: 3vw;
+        display: flex;
+        justify-content: flex-start;
     }
-
+    .phone_cart_home{
+        width:50vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+    h2 {margin: 1vh 0;
+    }
+    .checkout {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    .cart_form{
+        width: 90vw; 
+        display: flex; 
+        align-items: center;
+       /*background-color: green;*/
+    }
+    .cart_form ul {
+        width: 75vw; 
+        font-size: 90%;
+        /*background-color: pink;*/
+    }
+    
+    .cart_form li {
+        width: 25vw; 
+        text-align: left;
+        /*background-color: blue;*/
+    }
+    .flavor{
+        width: 20vw;
+    }
+    .quantity button {
+        font-size: .75rem;
+        padding: 0 .5rem;
+        height: 4vh;
+    }
+    
 }
