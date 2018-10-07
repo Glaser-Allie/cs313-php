@@ -235,29 +235,7 @@ else if(isset($_GET['purchase_complete'])) {
     
     echo "<h5>Thank you for your purchase, " . $_POST ["name"]."!        </h5><br><br>";
     
-    echo 'If we need to contact you, we\'ll email: <br>' . $_POST ["email"] . '<br><br>';
-    echo 'And, we\'ll deliver your SnoGourmet order to: <br>' . $_POST ["address"] . ', ' . $_POST ["city"] . ',  ' . $_POST ["state"] . '  ' . $_POST ["zip"] . '<br>';
-    
-    echo "<form action='./index.php?checkout=1' method='post'>";
-				
-				$total_price = 0;
-				foreach($_SESSION['shopping_cart'] as $id => $product) {
-					$product_id = $product['product_id'];
-					
-					
-					$total_price += $products[$product_id]['price'] * $product['quantity'];
-					echo "           
-                    <ul class='sumamry'>
-                        <li>
-                            <a href='./index.php?view_product=$id'>" . $product['quantity'] . " " . $products[$product_id]['name'] . " &#64; $" . $products[$product_id]['price'] . " = $" .  number_format(($products[$product_id]['price'] * $product['quantity']),2) . "</a>
-                        </li>
-                    </ul>
-                </form>";
-                }
-    
-            echo "<ul class='total'>
-                    <li >Total price: $" . number_format($total_price,2) . "<li>
-                </ul>";  
+      
 }
 
 
