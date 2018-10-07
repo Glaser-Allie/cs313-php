@@ -24,6 +24,7 @@ h1 {
     font-size: 7em;
     color: white;
     width: 80vw;
+    
 }
 
 h2 {
@@ -78,16 +79,16 @@ ul {
 /* HEADER */
 
 header {
-    width: 90vw;
+    width: 100vw;
     margin-top: 5vh;
     align-self: center;
-    justify-content: space-between;
+    margin-bottom:2vh;
     
 }
 
 nav {
     display: flex;
-    width: 90vw;
+    width: 100vw;
     align-self: center;
     margin-bottom: 5vh;
 }
@@ -97,12 +98,13 @@ nav {
     display: flex;
     align-items: center;
     text-align: left;
+    margin-left: 2vw;
 }
 .home_icon {
     height: 10vh;
 }
 .center {
-    width: 80vw;
+    width: 70vw;
 }
 .right {
     width: 20%;
@@ -110,6 +112,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: .8rem;
+    margin-right: 2vw;
 }
 .cart_icon {
     height: 5vh;
@@ -236,7 +239,7 @@ nav {
 }
 
 .empty{
-    margin-top: 10vh;
+    margin-top: 12vh;
     width: 90vw;
     text-align: right;
 }
@@ -244,7 +247,7 @@ nav {
 .shopping_cart {
     display: flex;
     flex-flow: column nowrap;
-    width: 60vw;
+    width: 90vw;
 }
 
 .product_row {
@@ -394,7 +397,13 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 950px) {
+    h1{font-size:3rem;}
+    header{margin-top: 2vh;}
+    .cart_icon {font-size:1rem;}
+    
+}
+
 @media only screen and (max-width: 550px) {
-    header{width: 100vw;}
-    h1{font-size:6rem;}
+    h1{font-size:2rem;}
 }
