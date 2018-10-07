@@ -156,19 +156,18 @@ else if(isset($_GET['checkout'])) {
 	// Display breadcrumbs
 	echo "<a href='./index.php?view_cart=1' class='crumbs'>Back to Cart</a>";
 	
-	echo "<h2>Checkout</h2>";
-	
 	if(empty($_SESSION['shopping_cart'])) {
 		echo "Your cart is empty.<br />";
 	}
 	else {
-		echo "<div class='checkout_page'><form action='./index.php?checkout=1' method='post'>
+		echo "<div class='checkout_page'><h2>Checkout</h2>
+        <form action='./index.php?checkout=1' method='post' class='cart_form'>
 		<ul class='cart_header'>
                     <li class='flavor'>Flavor</li>
 					<li class='price'>Price</li>
-					<li class='quantity'>Quantity</li>
+					<li class='quantity'>Qty</li>
                     <li class='calc_price'>Total</li>
-				</ul>";
+				</ul><br>";
 				
 				$total_price = 0;
 				foreach($_SESSION['shopping_cart'] as $id => $product) {
@@ -183,10 +182,11 @@ else if(isset($_GET['checkout'])) {
                             <li class='price' >$" . $products[$product_id]['price'] . "</li> 
 						<li class='quantity'>" . $product['quantity'] . "</li>
 						<li class='calc_price'>$" . number_format(($products[$product_id]['price'] * $product['quantity']),2) . "</li>
-                        </ul></form>";
+                        </ul><br>";
                 }
-            echo "<ul class='total'>
-                    <li >Total price:</li><li class='final_total'>$" . number_format($total_price,2) . "<li>
+            echo "</form><ul class='total'>
+                    <li >Total price:&nbsp;</li>
+                    <li>$" . number_format($total_price,2) . "<li>
                 </ul>";       
            
             
@@ -252,7 +252,7 @@ else if(isset($_GET['purchase_complete'])) {
                 </form>";
                 }
     
-            echo "<ul class='total'>
+            echo "<ul class='final_total'>
                     <li >Total price: $" . number_format($total_price,2) . "<li>
                 </ul></div>";  
 }
