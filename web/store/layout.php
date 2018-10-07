@@ -8,9 +8,6 @@ $header = <<<HTML
 	<link rel='stylesheet' type='text/css' href='./style.css' />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="icon" type="image/png" href="./favicon_16x16.png" sizes="16x16">
-<?php
-    echo '<link rel="shortcut icon" href="http://www.cs313.allieglaser.com/store/favicon_16x16.png?t=' . time() . '" />';
-?>
 </head>
 <body>
 	<div class="container" >
