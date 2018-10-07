@@ -396,7 +396,40 @@ button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
 .how_many h3 {
     font-size: 1rem;
 }
+.receipt {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.total {
+    margin:0;
+    padding: 0;
+}
+.summary {display: flex; flex-flow: row; width: 50vw;align-items: center; margin: 2rem;}
 
+.receipt ul:last-of-type{margin-bottom: 0;}
+.summary {
+    
+    justify-content: flex-start;
+    text-align: left;
+}
+.summary li:nth-child(2){
+    padding-left: 1rem;
+    width: 50%;
+}
+.summary li:nth-child(3){
+    padding-right: 1rem;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+.confirm {
+    color: midnightblue;
+    font-size: 1.2em;
+    margin: 1rem;
+}
+.summary img {
+    height: 15vh;
+}
 @media only screen and (max-width: 950px) {
     h1{font-size:3rem;}
     header{margin-top: 2vh;}

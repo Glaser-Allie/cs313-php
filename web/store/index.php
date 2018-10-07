@@ -222,12 +222,13 @@ else if(isset($_GET['purchase_complete'])) {
     
     echo "<h2>Purchase Complete</h2>";
     
-    echo "<h5>Thank you for your purchase, " . $_POST ["name"]."!        </h5><br><br>";
+    echo "<div class='receipt'>
+            <h5>Thank you for your purchase, " . $_POST ["name"]."!</h5>
+            <div class='confirm'>If we need to contact you, we'll email: <br>" . $_POST ["email"] . "</div>
+            
+            <div class='confirm'>And, we'll deliver your SnoGourmet order to: <br>" . $_POST ["address"] . ", " . $_POST ["city"] . ",  " . $_POST ["state"] . "  " . $_POST ["zip"] . "</div>";
     
-    echo "If we need to contact you, we'll email: <br>" . $_POST ["email"] . "<br><br>";
-    echo "And, we'll deliver your SnoGourmet order to: <br>" . $_POST ["address"] . ", " . $_POST ["city"] . ",  " . $_POST ["state"] . "  " . $_POST ["zip"] . "<br>";
-    
-    echo "<form action='./index.php?checkout=1' method='post'>";
+    echo "<div><form action='./index.php?checkout=1' method='post'>";
 				
 				$total_price = 0;
 				foreach($_SESSION['shopping_cart'] as $id => $product) {
@@ -235,21 +236,21 @@ else if(isset($_GET['purchase_complete'])) {
 					
 					
 					$total_price += $products[$product_id]['price'] * $product['quantity'];
-					echo "           
-                    <ul class='sumamry'>
+					echo "<div>           
+                    <ul class='summary'>
+                        <li>" . $products[$product_id]['image'] . "</li>
                         <li>
-                            <a href='./index.php?view_product=$id'>" . $product['quantity'] . " " . $products[$product_id]['name'] . " &#64; $" . $products[$product_id]['price'] . " = $" .  number_format(($products[$product_id]['price'] * $product['quantity']),2) . "</a>
+                            <a href='./index.php?view_product=$id'>" . $product['quantity'] . " " . $products[$product_id]['name'] . "<br> &#64; $" . $products[$product_id]['price'] . "</a>
                         </li>
+                        <li> $" .  number_format(($products[$product_id]['price'] * $product['quantity']),2) ."</li>
                     </ul>
-                </form>";
+                </form></div>";
                 }
     
             echo "<ul class='total'>
                     <li >Total price: $" . number_format($total_price,2) . "<li>
-                </ul>";  
-
+                </ul></div>";  
 }
-	
 
 // View all products
 else {
