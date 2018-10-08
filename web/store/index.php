@@ -12,53 +12,24 @@ if(isset($_GET['empty_cart'])) {
 	$_SESSION['shopping_cart'] = array();
 }
 
+$message = '';
+$name = '';
 
-// **PROCESS FORM DATA**
-
-// define variables and set to empty values
-$nameErr = $emailErr = $addressrErr = $cityErr = $stateErr = $zipErr ="";
-$name = $email = $address = $city = $state = $zip = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
+if(isset($_POST['purchase_complete'])) { 
     $name = test_input($_POST["name"]);
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
     $email = test_input($_POST["email"]);
-  }
-    
-  if (empty($_POST["addresss"])) {
-    $addressErr = "Address is required";
-  } else {
-    $address = test_input($_POST["address"]);
-  }
-
-  if (empty($_POST["city"])) {
-    $cityErr = "";
-  } else {
+    $address = test_input($_POST["address"]); 
     $city = test_input($_POST["city"]);
-  }
-
-  if (empty($_POST["state"])) {
-    $stateErr = "State is required";
-  } else {
     $state = test_input($_POST["state"]);
-  }
-}
+    $zip = test_input($_POST["zip"]);
+    }
 
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
-  $data = htmlspecialchars($data);
+  $data = htmlentities($data);
   return $data;
 }
-
-$message = '';
 
 // Add product to cart
 if(isset($_POST['add_to_cart'])) {
@@ -231,7 +202,7 @@ else if(isset($_GET['checkout'])) {
                     <li >Total price:&nbsp;</li>
                     <li>$" . number_format($total_price,2) . "<li>
                 </ul>";       
-           
+
             
             echo "<form action='./index.php?purchase_complete=1' method='post'>   
             
@@ -240,8 +211,7 @@ else if(isset($_GET['checkout'])) {
             <p><span class='error'>* required field</span></p>
 			<label>&nbsp;</label>
             <input type='text' placeholder='Name' name='name'>
-            <span class='error'>" . $_POST ["nameErr"] . "</span>
-			<br/>
+            <br/>
             
 			<label>&nbsp;</label>
             <input type='text' placeholder='Email Address' name='email'>
@@ -259,13 +229,16 @@ else if(isset($_GET['checkout'])) {
             </div>
             </div>
             
-            <button type='submit' name='purchase_complete' class='pink'>Complete Purchase</button></form></div>   
+            <input type='submit' name='purchase_complete' value='Complete Purchase' class='pink'></form></div>   
             ";
         }
 	}
 
 // Purchase Complete
 else if(isset($_GET['purchase_complete'])) {
+    //Process form data
+    $name = $email = $address = $city = $state = $zip = "";
+
     
     // Display breadcrumbs
 	echo "<a href='./index.php?view_cart=1' class='crumbs'>Back to Cart</a>";
