@@ -75,6 +75,11 @@ ul {
     width: 40vw;
 }
 
+.container p {
+    z-index: 999;
+    color: white;
+    font-size: 1rem;
+}
 
 /* HEADER */
 

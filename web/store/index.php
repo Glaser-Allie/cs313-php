@@ -15,6 +15,49 @@ if(isset($_GET['empty_cart'])) {
 
 // **PROCESS FORM DATA**
 
+// define variables and set to empty values
+$nameErr = $emailErr = $addressrErr = $cityErr = $stateErr = $zipErr ="";
+$name = $email = $address = $city = $state = $zip = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+    
+  if (empty($_POST["addresss"])) {
+    $addressErr = "Address is required";
+  } else {
+    $address = test_input($_POST["address"]);
+  }
+
+  if (empty($_POST["city"])) {
+    $cityErr = "";
+  } else {
+    $city = test_input($_POST["city"]);
+  }
+
+  if (empty($_POST["state"])) {
+    $stateErr = "State is required";
+  } else {
+    $state = test_input($_POST["state"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
 $message = '';
 
 // Add product to cart
@@ -194,8 +237,10 @@ else if(isset($_GET['checkout'])) {
             
             <div class='checkout_info'>
             <h4>Please enter your shipping information:</h4>
+            <p><span class='error'>* required field</span></p>
 			<label>&nbsp;</label>
             <input type='text' placeholder='Name' name='name'>
+            <span class='error'>" . $_POST ["nameErr"] . "</span>
 			<br/>
             
 			<label>&nbsp;</label>

@@ -14,6 +14,16 @@ if(isset($_GET['assignments'])) {
     echo"<div class='container assigned'>
             <div class='assignments'>
                 <h1>Assignments<br /></h1>
+                 <ul>
+                    <li>Week 1</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
+                <ul>
+                    <li>Week 2</a></li>
+                    <li><a href='#'>Team Activity</a></li>
+                    <li><a href='#'>Ponder: TBA</a></li>
+                </ul>
                 <ul>
                     <li>Week 3</li>
                     <li><a href='/team/wk3'>Team Activity</a></li>
@@ -36,16 +46,6 @@ if(isset($_GET['assignments'])) {
                 </ul>
                 <ul>
                     <li>Week 7</a></li>
-                    <li><a href='#'>Team Activity</a></li>
-                    <li><a href='#'>Ponder: TBA</a></li>
-                </ul>
-                <ul>
-                    <li>Week 8</a></li>
-                    <li><a href='#'>Team Activity</a></li>
-                    <li><a href='#'>Ponder: TBA</a></li>
-                </ul>
-                <ul>
-                    <li>Week 9</a></li>
                     <li><a href='#'>Team Activity</a></li>
                     <li><a href='#'>Ponder: TBA</a></li>
                 </ul>
