@@ -75,10 +75,14 @@ ul {
     width: 40vw;
 }
 
-.container p {
-    z-index: 999;
+.go_back {
+    display: flex;
     color: white;
     font-size: 1rem;
+    text-align: left;
+    position: absolute;
+    top:0;
+    margin-left: 1vw;
 }
 
 /* HEADER */
@@ -190,7 +194,7 @@ nav {
 }
 
 .item_display img {
-    height: 30vh;
+    height: 20vw;
     filter: drop-shadow(2px 3px 2px lightgrey);
 }
 
