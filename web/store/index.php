@@ -13,10 +13,13 @@ if(isset($_GET['empty_cart'])) {
 }
 
 $message = '';
-$name = '';
 
-if(isset($_POST['purchase_complete'])) { 
-    $name = test_input($_POST["name"]);
+if(isset($_POST['purchase_complete'])) {
+    if ( empty($_POST["name"])){
+        echo '$name is a required field';
+    } else {
+        $name = test_input($_POST["name"]);
+    }
     $email = test_input($_POST["email"]);
     $address = test_input($_POST["address"]); 
     $city = test_input($_POST["city"]);
@@ -210,26 +213,26 @@ else if(isset($_GET['checkout'])) {
             <h4>Please enter your shipping information:</h4>
             <p><span class='error'>* required field</span></p>
 			<label>&nbsp;</label>
-            <input type='text' placeholder='Name' name='name'>
+            <input type='text' placeholder='Name*' name='name'>
             <br/>
             
 			<label>&nbsp;</label>
-            <input type='text' placeholder='Email Address' name='email'>
+            <input type='text' placeholder='Email Address*' name='email' required>
 			<br/>
            
 			<label>&nbsp;</label>
-            <input type='text' placeholder='Street Address' name='address'>
+            <input type='text' placeholder='Street Address*' name='address' required>
 			<br/>
            
             <label>&nbsp;</label>
             <div class='citystatezip'>
-            <input type='text' placeholder='City' name='city'> 
-            <input type='text' placeholder='State' name='state' maxlength='25'>
-            <input type='text' placeholder='Zip' name='zip' maxlength='5'>
+            <input type='text' placeholder='City*' name='city' required> 
+            <input type='text' placeholder='State*' name='state' maxlength='25' required>
+            <input type='text' placeholder='Zip*' name='zip' maxlength='5' required>
             </div>
             </div>
             
-            <input type='submit' name='purchase_complete' value='Complete Purchase' class='pink'></form></div>   
+            <button type='submit' name='purchase_complete' class='pink'>Complete Purchase</button></form></div>   
             ";
         }
 	}
